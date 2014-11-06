@@ -140,6 +140,7 @@
 
 /* Content */
 .content-wrap {
+	overflow: visible;
 	height: 500px;	
 	display: block;
 	position: relative;
