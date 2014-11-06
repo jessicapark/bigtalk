@@ -140,7 +140,8 @@
 
 /* Content */
 .content-wrap {
-	height: auto;
+	height: 100%;
+	display: block;
 	position: relative;
 }
 
