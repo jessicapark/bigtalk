@@ -12,9 +12,7 @@
 }
 
 .tabs {
-	position: fixed;
-	bottom: 0;
-	overflow: hidden;
+	overflow: scroll;
 	margin: 0 auto;
 	width: 100%;
 	font-weight: 300;

@@ -326,6 +326,9 @@
 /*****************************/
 
 .tabs-style-linemove nav {
+	position: fixed;
+	width: 100%;
+	bottom: 0;
 	background: #fff;
 }
 
