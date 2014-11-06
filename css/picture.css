@@ -9,18 +9,15 @@
 }
 
 /* Common style */
-<<<<<<< HEAD
 .grid a{
 	width: 100%;
 	height: auto;
 	position: relative;
 	display: block;
 }
-=======
->>>>>>> parent of 1b0d9e8... grid
+
 .grid figure {
 	position: relative;
-	float: left;
 	overflow: hidden;
 /*	min-width: 320px;
 	max-width: 480px;*/
@@ -74,7 +71,7 @@
 }
 
 .grid figure h2 {
-	font-size: 20px;
+	font-size: 18px;
 	word-spacing: -0.15em;
 	font-weight: 300;
 }
