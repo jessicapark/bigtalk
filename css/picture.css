@@ -15,6 +15,7 @@
 	position: relative;
 	display: block;
 }
+
 .grid figure {
 	position: relative;
 	overflow: hidden;
