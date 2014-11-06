@@ -12,7 +12,8 @@
 }
 
 .tabs {
-	/*overflow: scroll;*/
+	overflow: visible;
+	height: auto;
 	margin: 0 auto;
 	width: 100%;
 	font-weight: 300;
