@@ -182,12 +182,3 @@
 	min-width: 15%;
 	display: inline-block;
 }
-
-@media screen and (max-width: 58em) {
-	.tabs nav a.icon span {
-		display: none;
-	}
-	.tabs nav a:before {
-		margin-right: 0;
-	}
-}
