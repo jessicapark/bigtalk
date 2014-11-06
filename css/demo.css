@@ -131,17 +131,6 @@ p {
 	}
 }
 
-@media screen and (max-width: 30em) {
-	.container > section {
-		padding: 3em 0;
-	}
-	.codrops-header {
-		padding: 2em 0 1em;
-	}
-	.codrops-header h1 {
-		font-size: 3.5em;
-	}
-}
 
 
 @media screen and (max-width: 25em) {
