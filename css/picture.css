@@ -17,7 +17,6 @@
 }
 .grid figure {
 	position: relative;
-	float: left;
 	overflow: hidden;
 /*	min-width: 320px;
 	max-width: 480px;*/
