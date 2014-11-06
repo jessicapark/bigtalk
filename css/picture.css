@@ -1,8 +1,8 @@
 .grid {
 	position: relative;
-	height: auto;
 	clear: both;
 	margin: 0 auto;
+	padding: 1em 0 4em;
 	max-width: 1000px;
 	list-style: none;
 	text-align: center;
@@ -19,7 +19,8 @@
 .grid figure {
 	position: relative;
 	overflow: hidden;
-	display: block;
+/*	min-width: 320px;
+	max-width: 480px;*/
 	max-height: 210px;
 	width: 100%;
 	height: auto;
@@ -134,7 +135,7 @@ figure.effect-jazz p {
 }
 
 figure.effect-jazz h2 {
-	padding-top: 5%;
+	padding-top: 26%;
 	-webkit-transition: -webkit-transform 0.35s;
 	transition: transform 0.35s;
 }
