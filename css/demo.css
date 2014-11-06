@@ -33,9 +33,11 @@ a {
 a:hover, a:focus {
 	color: #74777b;
 }
+body{
+	overflow: scroll;
+}
 
 .container{
-	overflow: scroll;
 }
 .support {
 	display: none;
