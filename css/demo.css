@@ -34,10 +34,14 @@ a:hover, a:focus {
 	color: #74777b;
 }
 body{
-	overflow: scroll;
 }
 
 .container{
+	width: 100%;
+	display: table;
+	margin: 0;
+	max-width: none;
+	height: 100vh;
 }
 .support {
 	display: none;
@@ -63,7 +67,7 @@ body{
 
 .container > section {
 	font-size: 1.25em;
-	min-height: 100%;
+	min-height: 100vh;
 }
 
 p {

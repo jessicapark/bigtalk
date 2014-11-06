@@ -15,7 +15,7 @@
 	overflow: visible;
 	height: auto;
 	margin: 0 auto;
-	width: 100%;
+	width: 100vh;
 	font-weight: 300;
 	font-size: 1.25em;
 }
@@ -142,7 +142,7 @@
 /* Content */
 .content-wrap {
 	overflow: visible;
-	height: 500px;	
+	height: 100vh;	
 	display: block;
 	position: relative;
 }
