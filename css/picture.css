@@ -1,8 +1,8 @@
 .grid {
 	position: relative;
+	height: auto;
 	clear: both;
 	margin: 0 auto;
-	padding: 1em 0 4em;
 	max-width: 1000px;
 	list-style: none;
 	text-align: center;
@@ -19,8 +19,7 @@
 .grid figure {
 	position: relative;
 	overflow: hidden;
-/*	min-width: 320px;
-	max-width: 480px;*/
+	display: block;
 	max-height: 210px;
 	width: 100%;
 	height: auto;
