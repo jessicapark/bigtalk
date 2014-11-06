@@ -19,7 +19,7 @@
 	position: relative;
 	overflow: hidden;
 	display: block;
-	max-height: 210px;
+	max-height: 180px;
 	width: 100%;
 	height: auto;
 	background: #3085a3;
@@ -133,7 +133,7 @@ figure.effect-jazz p {
 }
 
 figure.effect-jazz h2 {
-	padding-top: 5%;
+	padding-top: 0;
 	-webkit-transition: -webkit-transform 0.35s;
 	transition: transform 0.35s;
 }
