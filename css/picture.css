@@ -145,8 +145,7 @@ figure.effect-jazz p {
 	opacity: 0;
 }
 
-figure.effect-jazz:hover img,
-figure.effect-jazz:active img {
+figure.effect-jazz:hover img{
 	opacity: 0.2;
 	-webkit-transform: scale3d(1.2,1.2,1);
 	transform: scale3d(1.2,1.2,1);
