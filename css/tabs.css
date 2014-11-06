@@ -12,14 +12,12 @@
 }
 
 .tabs {
-	position: fixed;
-	bottom: 0;
+	overflow: visible;
+	height: 100vh;
 	margin: 0 auto;
 	width: 100%;
 	font-weight: 300;
 	font-size: 1.25em;
-	z-index: 999;
-	background-color: #fff;
 }
 
 /* Nav */
@@ -144,7 +142,7 @@
 /* Content */
 .content-wrap {
 	/*overflow: scroll;*/
-	/*height: 100vh;	*/
+	height: 100vh;	
 	display: block;
 	position: relative;
 }
