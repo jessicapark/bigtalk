@@ -140,6 +140,7 @@
 
 /* Content */
 .content-wrap {
+	height: 500px;
 	position: relative;
 }
 
