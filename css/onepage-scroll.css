@@ -369,10 +369,14 @@ video#bgvid {
   bottom: 0;
 }
 .bg-dot .sec1-2{
+    right: 0;
+    left: auto;
     -webkit-animation: sec 1.5s 1;
     -moz-animation: sec 1.5s 1;
     -o-animation: sec 1.5s 1;
-    animation: sec 1.5s 1;
+    animation: sec 1.5s 1;/*
+    animation-delay:1s;
+    -webkit-animation-delay:1s;*/
 }
 
 @-webkit-keyframes sec {
@@ -382,7 +386,7 @@ video#bgvid {
     50%, 60%, 65% { opacity: 1; filter: alpha(opacity=100); -khtml-opacity: 1; -moz-opacity: 1;
       width: 50%;
     }
-    100% { opacity: 0; filter: alpha(opacity=0); -khtml-opacity: 0; -moz-opacity: 0;
+    100% { opacity: 1; filter: alpha(opacity=100); -khtml-opacity: 1; -moz-opacity: 1;
       width: 100%; }
 }
 

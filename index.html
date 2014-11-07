@@ -11,10 +11,7 @@
 		<link rel="stylesheet" type="text/css" href="css/tabs.css" />
 		<link rel="stylesheet" type="text/css" href="css/picture.css" />
 		<link rel="stylesheet" type="text/css" href="css/tabstyles.css" />
-		<link rel="stylesheet" type="text/css" href="css/onepage-scroll.css" />
   		<script src="js/modernizr.custom.js"></script>
-  		<script type="text/javascript" src="onepagescroll.js"></script>
-  		<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
 	</head>
 	<body>
 		<div class="container">
@@ -24,27 +21,46 @@
 						<section id="section-linemove-1">
 							<div class="sct1">
  
-						      <section class="page1">
-						      	<video preload="auto" autoplay="autoplay" loop="loop" id="bgvid" poster="img/3.jpg" class="playing">
-							          <!-- <source src="images/service.m4v" type="video/m4v"> -->
+						      <section class="page1 ops-section">
+						      	<!-- <video preload="auto" autoplay="autoplay" loop="loop" id="bgvid" poster="img/3.jpg" class="playing">
+							          <source src="images/service.m4v" type="video/m4v">
 							          <source src="img/vid1.webm" type="video/webm">
 							          <img width="100%" src="img/3.jpg">
-							    </video>
+							    </video> -->
 								<div class="bg-dot">
-									<div class="sec sec1-1"><img src="img/sec1-1.png" width="329" height="148"></div>
-									<div class="sec sec1-2"><img src="img/sec1-2.png" width="301" height="301"></div>
 								</div>
 						      </section>
 							    
-							  <section class="page2">
-							    	21
+							  <section class="page2 ops-section">
+							  		<div class="sec-title"><img src="img/sec1-title.png" width="130" height="130"></div>
+							  		<div class="sec-title-2"><img src="img/sec1-title-2.png" width="122" height="56"><div class="elmt"><img src="img/elmt1.png" width="13" height="13"><img src="img/elmt1.png" width="13" height="13"><img src="img/elmt1.png" width="13" height="13"></div></div>
+							    	<div class="grid">
+										<figure class="effect-hera">
+											<img src="img/1.jpg"/>
+											<figcaption>
+												<h2><img src="img/btn-play.png"></h2>
+												<p>
+													<a href="#"><i class="fa fa-fw fa-file-pdf-o"></i></a>
+													<a href="#"><i class="fa fa-fw fa-file-image-o"></i></a>
+													<a href="#"><i class="fa fa-fw fa-file-archive-o"></i></a>
+													<a href="#"><i class="fa fa-fw fa-file-code-o"></i></a>
+												</p>
+											</figcaption>			
+										</figure>
+									</div>
 						      </section>
 							    
-							  <section class="page3">33
+							  <section class="page3 ops-section">33
 						      </section>
 
-							  <section class="page4">33
+							  <section class="page4 ops-section">33
 						      </section>
+
+						      	<div class="globle-elmt">
+									<div class="elmt elmt1-1"><img src="img/elmt1-1.png" width="347" height="347"></div>
+									<div class="elmt elmt1-3"><img src="img/elmt1-3.png" width="231" height="230"></div>
+									<div class="elmt elmt1-2"><img src="img/elmt1-2.png" width="301" height="301"></div>
+								</div>
 
 							</div>
 						</section>
@@ -109,19 +125,6 @@
 
 			})();
 
-			onePageScroll(".sct1", {
-				sectionContainer: ".sct1 section",
-				loop: true,
-				responsiveFallback: false
-			});
-				
-
-			$(window).load(function(){
-
-			       $(".bg-dot").bind("touchstart",function(event){
-			           document.getElementById("bgvid").play();
-			     });
-			})	
 
 		</script>
 	</body>
