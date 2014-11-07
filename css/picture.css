@@ -178,9 +178,15 @@ figure.effect-jazz:hover p {
  	height: 55px;
 }
 
+
 figure.effect-hera {
 	background: -webkit-linear-gradient(-45deg, #ff4821 0%,#ff0314 100%);
 	background: linear-gradient(-45deg,  #ff4821 0%,#ff0314 100%);
+}
+
+.page3 figure.effect-hera, .page4 figure.effect-hera {
+	background: #f4f4f4;
+	background: #f4f4f4;
 }
 
 figure.effect-hera h2 {

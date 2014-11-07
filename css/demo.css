@@ -81,10 +81,14 @@ p {
 	position: relative;	
 }
 .content-wrap .sct1 section{
+	height: auto;
   display: block;
-  height: 100vh;
-  overflow: hidden;
+  overflow: visible;
   position: relative;
+}
+
+.content-wrap .sct1 section.page1{
+  height: 100vh;
 }
 .bg-dot, #section-linemove-1{
   width: 100%;
@@ -105,7 +109,6 @@ video#bgvid {
 }
 
 .page2 .sec-title{
-	margin-top: 30px;
 	margin-left: -200px;
 }
 
@@ -116,9 +119,10 @@ video#bgvid {
 }
 
 .page2 .sec-title-2 .elmt{
+	position: relative;
 	margin-left:-32px;
 }
-.page2 .sec-title-2 .elmt img{
+.sec-title-2 .elmt img{
 	margin: 0 9px;
 
 }
@@ -153,23 +157,15 @@ video#bgvid {
 	-webkit-animation-delay:0.2s;
 }
 
-.globle-elmt{
-  width: 100%;
-  height: auto;
-  position: absolute;
-  top: 0;
-  left: 0;
-
-}
-.globle-elmt .sec{
+.elmt{
+	overflow: visible;
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  overflow: hidden;
 }
-.globle-elmt .elmt1-1 img{
+.elmt1-1 img{
   position: absolute;
   left: -70px;
   top: 400px;
@@ -179,7 +175,7 @@ video#bgvid {
     animation: blink1 2s infinite;
 
 }
-.globle-elmt .elmt1-3 img{
+.elmt1-3 img{
   position: absolute;
   left: 50px;
   top: 430px;
@@ -190,6 +186,27 @@ video#bgvid {
     animation-delay:1s;
 	-webkit-animation-delay:1s;
 }
+
+.elmt1-4 {
+	width: 281px;
+	height: 560px;
+  position: absolute;
+  right: 0px;
+  top: 350px;
+  left: auto;
+}
+
+.elmt1-4 img{
+	right: 0;
+  	position: absolute;
+    -webkit-animation: blink1 2s infinite;
+    -moz-animation: blink1 2s infinite;
+    -o-animation: blink1 2s infinite;
+    animation: blink1 2s infinite;
+    animation-delay:1s;
+	-webkit-animation-delay:1s;
+}
+
 
 
 @-webkit-keyframes blink1 {
@@ -202,22 +219,20 @@ video#bgvid {
 }
 
 
-.globle-elmt .elmt1-2 img{
+.elmt1-2 img{
   position: absolute;
   right: 0;
   top: 300px;
 }
 
 
-.globle-elmt .elmt1-2{
+.elmt1-2{
     right: 0;
     left: auto;
     -webkit-animation: line1 1.5s 1;
     -moz-animation: line1 1.5s 1;
     -o-animation: line1 1.5s 1;
-    animation: line1 1.5s 1;/*
-    animation-delay:1s;
-    -webkit-animation-delay:1s;*/
+    animation: line1 1.5s 1;
 }
 
 @-webkit-keyframes line1{
@@ -232,6 +247,31 @@ video#bgvid {
   	}
 }
 
+.page3 .sec-title {
+	margin-top: 50px;
+	/*margin-left: -50px;*/
+}
+.page3 .sec-title-2 {
+margin-top: 30px;
+margin-bottom: 50px;
+}
+.page3 .sec-title-2 .elmt {
+position: relative;
+margin-left: -50px;
+}
+
+.page4 .sec-title {
+	margin-top: 50px;
+	margin-left: 200px;
+}
+.page4 .sec-title-2 {
+margin-top: -30px;
+margin-bottom: 50px;
+}
+.page4 .sec-title-2 .elmt {
+position: relative;
+margin-left:  0px;
+}
 
 
 
