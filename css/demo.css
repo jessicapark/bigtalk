@@ -295,10 +295,10 @@ canvas{
     overflow: hidden;
     right: 0;
     left: auto;
-    -webkit-animation: line1 3.5s infinite;
-    -moz-animation: line1 3.5s infinite;
-    -o-animation: line1 3.5s infinite;
-    animation: line1 3.5s infinite;
+    -webkit-animation: line1 3.5s 5;
+    -moz-animation: line1 3.5s 5;
+    -o-animation: line1 3.5s 5;
+    animation: line1 3.5s 5;
 }
 
 @-webkit-keyframes line1{
@@ -326,10 +326,10 @@ canvas{
     overflow: hidden;
     left: 0;
     right: auto;
-    -webkit-animation: line2 3.5s infinite;
-    -moz-animation: line2 3.5s infinite;
-    -o-animation: line2 3.5s infinite;
-    animation: line2 3.5s infinite;
+    -webkit-animation: line2 3.5s 5;
+    -moz-animation: line2 3.5s 5;
+    -o-animation: line2 3.5s 5;
+    animation: line2 3.5s 5;
 }
 
 @-webkit-keyframes line2{
