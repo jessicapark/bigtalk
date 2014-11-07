@@ -356,10 +356,10 @@ canvas{
     top: 30px;
     left: 0;
     right: auto;
-    -webkit-animation: line2 3.5s 5;
-    -moz-animation: line2 3.5s 5;
-    -o-animation: line2 3.5s 5;
-    animation: line2 3.5s 5;
+    -webkit-animation: line2 3.5s infinite;
+    -moz-animation: line2 3.5s infinite;
+    -o-animation: line2 3.5s infinite;
+    animation: line2 3.5s infinite;
 }
 
 .elmt1-7 img{
@@ -413,10 +413,10 @@ canvas{
     overflow: hidden;
     left: 0;
     right: auto;
-    -webkit-animation: line2 3.5s 5;
-    -moz-animation: line2 3.5s 5;
-    -o-animation: line2 3.5s 5;
-    animation: line2 3.5s 5;
+    -webkit-animation: line2 3.5s infinite;
+    -moz-animation: line2 3.5s infinite;
+    -o-animation: line2 3.5s infinite;
+    animation: line2 3.5s infinite;
 }
 .elmt1-10 img{
   position: absolute;
@@ -429,10 +429,10 @@ canvas{
     overflow: hidden;
     left: 0;
     right: auto;
-    -webkit-animation: line2 3.5s 5;
-    -moz-animation: line2 3.5s 5;
-    -o-animation: line2 3.5s 5;
-    animation: line2 3.5s 5;
+    -webkit-animation: line2 3.5s infinite;
+    -moz-animation: line2 3.5s infinite;
+    -o-animation: line2 3.5s infinite;
+    animation: line2 3.5s infinite;
     animation-delay:2s;
     -webkit-animation-delay:2s;
 }
