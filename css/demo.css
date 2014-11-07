@@ -303,13 +303,13 @@ canvas{
 
 @-webkit-keyframes line1{
     0% { opacity: 0; filter: alpha(opacity=0); -khtml-opacity: 0; -moz-opacity: 0;
-      transform:translate(500px,-500px);
+      -webkit-transform:translate(500px,-500px);-moz-transform:translate(500px,-500px);transform:translate(500px,-500px);
     }
     50%,60%,65% { opacity: 1; filter: alpha(opacity=100); -khtml-opacity: 1; -moz-opacity: 1;
-      transform:translate(0px,0px);
+      -webkit-transform:translate(0px,0px);-moz-transform:translate(0px,0px);transform:translate(0px,0px);
   	}
     100% { opacity: 0; filter: alpha(opacity=0); -khtml-opacity: 0; -moz-opacity: 0;
-      transform:translate(-500px,500px);
+      -webkit-transform:translate(-500px,500px);-moz-transform:translate(-500px,500px);transform:translate(-500px,500px);
     }
 }
 
@@ -334,13 +334,13 @@ canvas{
 
 @-webkit-keyframes line2{
     0% { opacity: 0; filter: alpha(opacity=0); -khtml-opacity: 0; -moz-opacity: 0;
-      transform:translate(-500px,-500px);
+      -webkit-transform:translate(-500px,-500px);-moz-transform:translate(-500px,-500px);transform:translate(-500px,-500px);
     }
     50%,60%,65% { opacity: 1; filter: alpha(opacity=100); -khtml-opacity: 1; -moz-opacity: 1;
-      transform:translate(0px,0px);
+      -webkit-transform:translate(0px,0px);-moz-transform:translate(-500px,-500px);transform:translate(-500px,-500px);
     }
     100% { opacity: 0; filter: alpha(opacity=0); -khtml-opacity: 0; -moz-opacity: 0;
-      transform:translate(500px,500px);
+      -webkit-transform:translate(500px,500px);-moz-transform:translate(-500px,-500px);transform:translate(-500px,-500px);
     }
 }
 
