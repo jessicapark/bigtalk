@@ -90,6 +90,7 @@ p {
 
 .content-wrap .sct1 section.page1{
   height: 100vh;
+  width: 100%;
 }
 .bg-dot, #section-linemove-1{
   width: 100%;
@@ -106,6 +107,7 @@ p {
 	width: 100%;
 	height: 100vh;
   overflow: hidden;
+  position: absolute;
 }
 .page1 .pic-slide img{
 	width: auto;
