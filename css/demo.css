@@ -84,7 +84,7 @@ p {
 	height: auto;
   display: block;
   overflow: visible;
-  overflow-x: hidden;
+  overflow-y: hidden;
   position: relative;
   margin-bottom: 48px;
 }
