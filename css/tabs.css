@@ -148,6 +148,7 @@
 }
 
 .content-wrap section {
+	width: 100%;
 	display: none;
 	margin: 0 auto;
 	max-width: 1200px;
