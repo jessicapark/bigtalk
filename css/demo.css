@@ -438,6 +438,25 @@ canvas{
 }
 
 
+.elmt1-11 img{
+  position: absolute;
+  right: 0;
+  top: 200px;
+}
+
+
+.elmt1-11{
+    overflow: hidden;
+    right: 0;
+    top: -330px;
+    left: auto;
+    -webkit-animation: line1 3.5s infinite;
+    -moz-animation: line1 3.5s infinite;
+    -o-animation: line1 3.5s infinite;
+    animation: line1 3.5s infinite;
+    animation-delay:1s;
+    -webkit-animation-delay:1s;
+}
 .page3 .sec-title {
 	margin-top: 50px;
 	/*margin-left: -50px;*/
