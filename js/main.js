@@ -113,7 +113,7 @@ function init(){
    	if(ppp>1){
    		clearInterval(drawtimer);
    		filler= setInterval("fill()",100);
-   		ctx.fillStyle="rgba(173,22,10,1)";
+   		ctx.fillStyle="rgba(224,6,21,1)";
    		return;
    	}
 ctx.clearRect(0,0,1500,1500);
@@ -130,7 +130,7 @@ line();
  	tempx[i]=tempxs[i]+xx;tempy[i]=tempys[i]+yy;
  	if((ttt+i)%10==9){
  	 alp=Math.random()+0.5;
- 	ctx.fillStyle="rgba(173,22,10,"+alp+")";
+ 	ctx.fillStyle="rgba(224,6,21,"+alp+")";
  }
    ctx.beginPath();  
    ctx.arc(tempx[i],tempy[i],3,0,2*Math.PI);
@@ -150,7 +150,7 @@ line();
     tempys[i]=tempy[i]+Math.sin(dddd[i])*RR;
     if((ttt+i)%10==9){
     alp=Math.random()+0.5;
- 	ctx.fillStyle="rgba(173,22,10,"+alp+")";
+ 	ctx.fillStyle="rgba(224,6,21,"+alp+")";
 }
    ctx.beginPath();  
    ctx.arc(tempxs[i],tempys[i],3,0,2*Math.PI);
@@ -186,36 +186,36 @@ function fill(){
 	if(f==7){ctx.clearRect(0,0,1500,1500);}
 	//ctx.clearRect(0,0,500,500);
 	ctx.beginPath();
-	ctx.fillStyle="rgba(173,22,10,1)";
-	if(f<7)ctx.fillStyle="rgba(173,22,10,0.2)";
+	ctx.fillStyle="rgba(224,6,21,1)";
+	if(f<7)ctx.fillStyle="rgba(224,6,21,0.2)";
 for (var i = 0; i < 3; i++) { 
    ctx.lineTo(tempx[lineP1[i]],tempy[lineP1[i]]);
    }
    ctx.fill();
 if(f<2)return;
 	ctx.beginPath();
-	if(f<7)ctx.fillStyle="rgba(173,22,10,0.3)";
+	if(f<7)ctx.fillStyle="rgba(224,6,21,0.3)";
 for (var i = 3; i <10; i++) { 
    ctx.lineTo(tempx[lineP1[i]],tempy[lineP1[i]]);
    }
    ctx.fill();
 if(f<3)return;
    ctx.beginPath();
-   if(f<7)ctx.fillStyle="rgba(173,22,10,0.4)";
+   if(f<7)ctx.fillStyle="rgba(224,6,21,0.4)";
 for (var i = 10; i <13; i++) { 
    ctx.lineTo(tempx[lineP1[i]],tempy[lineP1[i]]);
    }
    ctx.fill();
 if(f<4)return;
  ctx.beginPath();
- if(f<7)ctx.fillStyle="rgba(173,22,10,0.6)";
+ if(f<7)ctx.fillStyle="rgba(224,6,21,0.6)";
 for (var i = 13; i <17; i++) { 
    ctx.lineTo(tempx[lineP1[i]],tempy[lineP1[i]]);
    }
       ctx.fill();
  if(f<5)return;
     ctx.beginPath();
-    if(f<7)ctx.fillStyle="rgba(173,22,10,0.8)";
+    if(f<7)ctx.fillStyle="rgba(224,6,21,0.8)";
 for (var i = 17; i <27; i++) { 
    ctx.lineTo(tempx[lineP1[i]],tempy[lineP1[i]]);
    }
@@ -223,11 +223,15 @@ for (var i = 17; i <27; i++) {
    if(f<6)return;
 
        ctx.beginPath();
-      if(f<7) ctx.fillStyle="rgba(173,22,10,1)";
+      if(f<7) ctx.fillStyle="rgba(224,6,21,1)";
 for (var i = 27; i <30; i++) { 
    ctx.lineTo(tempx[lineP1[i]],tempy[lineP1[i]]);
    }
    ctx.fill();
 
-$('#canvas').fadeOut(3000);
+$('#canvas').fadeOut(1000);
+$('.logo').fadeTo(2000,1);
+$('.elmt').fadeIn(2000);
+
+
 }
