@@ -161,12 +161,12 @@ canvas{
   display: none;
 }
 .page2 .sec-title{
-	margin-left: -200px;
+	margin-left: -150px;
 }
 
 .page2 .sec-title-2{
 	margin-top: -30px;
-	margin-left: 40px;
+	margin-left: 70px;
 	margin-bottom: 50px;
 }
 
@@ -285,32 +285,71 @@ canvas{
 
 
 .elmt1-2 img{
-  position: absolute;
+  position: fixed;
   right: 0;
   top: 200px;
 }
 
 
 .elmt1-2{
+    overflow: hidden;
     right: 0;
     left: auto;
-    -webkit-animation: line1 1.5s 1;
-    -moz-animation: line1 1.5s 1;
-    -o-animation: line1 1.5s 1;
-    animation: line1 1.5s 1;
+    -webkit-animation: line1 3.5s infinite;
+    -moz-animation: line1 3.5s infinite;
+    -o-animation: line1 3.5s infinite;
+    animation: line1 3.5s infinite;
 }
 
 @-webkit-keyframes line1{
     0% { opacity: 0; filter: alpha(opacity=0); -khtml-opacity: 0; -moz-opacity: 0;
-      width: 0;
+      width: 0;margin-right: 0%;
     }
-    50%, 60%, 65% { opacity: 1; filter: alpha(opacity=100); -khtml-opacity: 1; -moz-opacity: 1;
-      width: 50%;
+    20%, 30%, 35% { opacity: 1; filter: alpha(opacity=100); -khtml-opacity: 1; -moz-opacity: 1;
+      width: 50%;margin-right: 0%;
     }
-    100% { opacity: 1; filter: alpha(opacity=100); -khtml-opacity: 1; -moz-opacity: 1;
-      width: 100%;
+    50%, 60% { opacity: 1; filter: alpha(opacity=100); -khtml-opacity: 1; -moz-opacity: 1;
+      width: 100%;margin-right: 0%;
   	}
+    70%, 80%, 85% { opacity: 1; filter: alpha(opacity=100); -khtml-opacity: 1; -moz-opacity: 1;
+      width: 50%;margin-right: 50%;
+    }
+    100% { opacity: 0; filter: alpha(opacity=0); -khtml-opacity: 0; -moz-opacity: 0;
+      width: 0;margin-right: 100%;
+    }
 }
+
+
+
+.elmt1-5 img{
+  position: fixed;
+  left: -200px;
+  top: -300px;
+}
+
+
+.elmt1-5{
+    overflow: hidden;
+    left: 0;
+    right: auto;
+    -webkit-animation: line2 3.5s infinite;
+    -moz-animation: line2 3.5s infinite;
+    -o-animation: line2 3.5s infinite;
+    animation: line2 3.5s infinite;
+}
+
+@-webkit-keyframes line2{
+    0% { opacity: 0; filter: alpha(opacity=0); -khtml-opacity: 0; -moz-opacity: 0;
+      width: 0;margin-left: 0%;
+    }
+    50% { opacity: 1; filter: alpha(opacity=100); -khtml-opacity: 1; -moz-opacity: 1;
+      width: 100%;margin-left: 0%;
+    }
+    100% { opacity: 0; filter: alpha(opacity=0); -khtml-opacity: 0; -moz-opacity: 0;
+      width: 0;margin-left: 100%;
+    }
+}
+
 
 .page3 .sec-title {
 	margin-top: 50px;
