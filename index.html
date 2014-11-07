@@ -11,52 +11,77 @@
 		<link rel="stylesheet" type="text/css" href="css/tabs.css" />
 		<link rel="stylesheet" type="text/css" href="css/picture.css" />
 		<link rel="stylesheet" type="text/css" href="css/tabstyles.css" />
+		<link rel="stylesheet" type="text/css" href="css/onepage-scroll.css" />
   		<script src="js/modernizr.custom.js"></script>
+  		<script type="text/javascript" src="onepagescroll.js"></script>
 	</head>
 	<body>
 		<div class="container">
 			<!-- Top Navigation -->
-			<section>
 				<div class="tabs tabs-style-linemove">
 					<div class="content-wrap">
 						<section id="section-linemove-1">
+							<div class="sct1">
+ 
+						      <section class="page1">
+						      	<video preload="auto" autoplay="" loop="" id="bgvid" poster="img/3.jpg" class="playing">
+							          <!-- <source src="images/service.m4v" type="video/m4v"> -->
+							          <source src="img/vid1.webm" type="video/webm">
+							          <img width="100%" src="img/3.jpg">
+							    </video>
+								<div class="bg-dot">
+
+								</div>
+						      </section>
+							    
+							  <section class="page2">
+							    	21
+						      </section>
+							    
+							  <section class="page3">33
+						      </section>
+
+							  <section class="page4">33
+						      </section>
+
+							</div>
 						</section>
 						<section id="section-linemove-2"><p>2</p></section>
 						<section id="section-linemove-3">
 							<div class="grid">
 									<figure class="effect-jazz">
-										<img src="img/25.jpg" alt="img25"/>
+										<img src="img/1.jpg"/>
 										<figcaption>
 											<h2>赋予机器智慧，王海峰揭秘机器人如何思考<div>2014-10-30 17:04:03</div></h2>
-											<a href="#">View more</a>
+											<a href="">View more</a>
 										</figcaption>			
 									</figure>
 									<figure class="effect-jazz">
-										<img src="img/6.jpg" alt="img06"/>
+										<img src="img/2.jpg"/>
 										<figcaption>
 											<h2>机器人重塑未来背后：是否将会失控？<div>2014-10-30 17:06:31</div></h2>
-											<a href="#">View more</a>
+											<a href="">View more</a>
 										</figcaption>			
 									</figure>
 									<figure class="effect-jazz">
-										<img src="img/25.jpg" alt="img25"/>
+										<img src="img/3.jpg"/>
 										<figcaption>
 											<h2>赋予机器智慧，王海峰揭秘机器人如何思考<div>2014-10-30 17:04:03</div></h2>
-											<a href="#">View more</a>
+											<a href="">View more</a>
 										</figcaption>			
 									</figure>
 									<figure class="effect-jazz">
-										<img src="img/6.jpg" alt="img06"/>
+										<img src="img/4.jpg"/>
 										<figcaption>
 											<h2>机器人重塑未来背后：是否将会失控？<div>2014-10-30 17:06:31</div></h2>
-											<a href="#">View more</a>
+											<a href="">View more</a>
 										</figcaption>			
 									</figure>
 									<figure class="effect-jazz">
 										<img src="img/25.jpg" alt="img25"/>
 										<figcaption>
 											<h2>赋予机器智慧，王海峰揭秘机器人如何思考<div>2014-10-30 17:04:03</div></h2>
-											<a href="#">View more</a>
+											<a href="">View more</a>
 										</figcaption>			
 									</figure>
 									<div class="clearfix"></div>
@@ -71,7 +96,6 @@
 						</ul>
 					</nav>
 				</div><!-- /tabs -->
-			</section>
 		</div><!-- /container -->
 		<script src="js/cbpFWTabs.js"></script>
 		<script>
@@ -82,6 +106,13 @@
 				});
 
 			})();
+
+			onePageScroll(".sct1", {
+				sectionContainer: ".sct1 section",
+				loop: true,
+				responsiveFallback: false
+			});
+				
 		</script>
 	</body>
 </html>
