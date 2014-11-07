@@ -14,6 +14,7 @@
 		<link rel="stylesheet" type="text/css" href="css/onepage-scroll.css" />
   		<script src="js/modernizr.custom.js"></script>
   		<script type="text/javascript" src="onepagescroll.js"></script>
+  		<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
 	</head>
 	<body>
 		<div class="container">
@@ -30,7 +31,7 @@
 							          <img width="100%" src="img/3.jpg">
 							    </video>
 								<div class="bg-dot">
-										555
+										553242
 								</div>
 						      </section>
 							    
@@ -113,7 +114,14 @@
 				responsiveFallback: false
 			});
 				
-			document.getElementById("bgvid").play();
+
+			$(window).load(function(){
+
+			       $(".bg-dot").bind("touchstart",function(event){
+			           document.getElementById("bgvid").play();
+			     });
+			})	
+
 		</script>
 	</body>
 </html>
