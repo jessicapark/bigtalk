@@ -323,5 +323,17 @@ margin-left:  0px;
 }
 
 
-
+  .freeout{
+    display: none;
+    position: absolute;
+    width: 510px;
+    height: 330px;
+    background-color: white;
+  }
+  .whitebox{
+    display: none;
+    position: absolute;
+    background-color: white;
+    z-index:1001;
+  }
 

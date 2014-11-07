@@ -38,12 +38,24 @@ $('#canvas').attr('width',ww).attr('height',hh);
     tempw=$(window).width();
     temph=$(window).height();  
   $(".with"+temp).css({
-      width: tempw,
-      height: temph,
+      // width: tempw,
+      // height: temph,
       left: x,
       top: y
     }).fadeIn();    //<div class="freeout with?">video?</div>
  })
+
+ //关闭播放框
+ $('.close').live('click',function(){ 
+  $('.whitebox').hide();
+  $('.freeout').hide();
+ })
+
+ $('.tabs nav ul li').live('click',function(){ 
+  $('.whitebox').hide();
+  $('.freeout').hide();
+ })
+
  //以下，关于big的动画
  $('.effect-jazz').live('click',function(){ 
   temp=$(this).attr('with');
@@ -62,7 +74,7 @@ $('#canvas').attr('width',ww).attr('height',hh);
         $(this).animate({
     
     height:'+=500px',
-    top:'-=250px'
+    top:'0px'
   });
     });
  })
