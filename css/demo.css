@@ -85,7 +85,7 @@ p {
   display: block;
   overflow: visible;
   position: relative;
-  margin-bottom: 100px;
+  /*margin-bottom: 100px;*/
 }
 
 .content-wrap .sct1 section.page1{
@@ -325,10 +325,10 @@ canvas{
     overflow: hidden;
     left: 0;
     right: auto;
-    -webkit-animation: line2 3.5s 5;
-    -moz-animation: line2 3.5s 5;
-    -o-animation: line2 3.5s 5;
-    animation: line2 3.5s 5;
+    -webkit-animation: line2 3.5s infinite;
+    -moz-animation: line2 3.5s infinite;
+    -o-animation: line2 3.5s infinite;
+    animation: line2 3.5s infinite;
 }
 
 @-webkit-keyframes line2{

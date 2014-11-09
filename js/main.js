@@ -54,6 +54,7 @@ $('#canvas').attr('width',ww).attr('height',hh);
  $('.tabs nav ul li').live('click',function(){ 
   $('.whitebox').hide();
   $('.freeout').hide();
+  
  })
 
  //以下，关于big的动画
