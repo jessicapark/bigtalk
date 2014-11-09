@@ -486,9 +486,9 @@ margin-left:  0px;
   .freeout{
     display: none;
     position: absolute;
-    width: 510px;
-    height: 330px;
-    background-color: white;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.85);
   }
   .whitebox{
     display: none;
@@ -496,4 +496,14 @@ margin-left:  0px;
     background-color: white;
     z-index:1001;
   }
+  .close {
+position: absolute;
+right: 20px;
+top: 20px;
+}
+
+iframe {
+position: absolute;
+top: 25%;
+}
 

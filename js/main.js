@@ -47,14 +47,14 @@ $('#canvas').attr('width',ww).attr('height',hh);
 
  //关闭播放框
  $('.close').live('click',function(){ 
-  $('.whitebox').hide();
-  $('.freeout').hide();
+  $('.whitebox').fadeOut();
+  $('.freeout').fadeOut();
  })
 
  $('.tabs nav ul li').live('click',function(){ 
   $('.whitebox').hide();
   $('.freeout').hide();
-  
+
  })
 
  //以下，关于big的动画
