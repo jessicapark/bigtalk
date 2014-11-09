@@ -84,7 +84,6 @@ p {
 	height: auto;
   display: block;
   overflow: visible;
-  /*overflow-y: hidden;*/
   position: relative;
   margin-bottom: 100px;
 }
@@ -363,7 +362,7 @@ canvas{
 }
 
 .elmt1-7 img{
-  position: absolute;
+  position: hidden;
   right: 0;
   top: 200px;
 }
