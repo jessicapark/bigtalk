@@ -159,6 +159,7 @@
 
 .content-wrap section.content-current {
 	display: block;
+	padding-bottom: 52px;
 }
 
 .content-wrap section p {
