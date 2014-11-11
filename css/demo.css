@@ -18,9 +18,9 @@
 body {
 	
   	background: #fff url('../img/bg-dot.png') repeat;
-	color: #000;
+	color: #414141;
 	font-size: 13px;
-	font-family: "athelas", Lora, "Times New Roman", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+	font-family: "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
 	line-height: 1.55;
 	letter-spacing: 1px;
 }
@@ -509,3 +509,13 @@ position: absolute;
 top: 25%;
 }
 
+.chapter{
+  margin: 30px;
+  margin-top: 50px;
+  font-size: 14px;
+}
+.chapter .title{
+  margin-bottom: 5px;
+  font-size: 18px;
+  font-weight: 900;
+}
