@@ -142,7 +142,7 @@
 
 /* Content */
 .content-wrap {
-	/*overflow: scroll;*/
+	overflow: visible;
 	height: auto;	
 	display: block;
 	position: relative;
