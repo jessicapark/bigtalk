@@ -112,7 +112,6 @@ body {
   margin: 0;
   height: 100%;
   -webkit-font-smoothing: antialiased;
-  background: url('images/sec2-repeat.png');
 }
 
 .wrapper {
@@ -398,30 +397,6 @@ top: 0px;
 .page-title{
   margin-top: 20px;
   z-index: 999;
-}
-.main section.page3{
-  background: url(images/iphone1.png) no-repeat;
-  /*background-attachment:fixed;*/
-  background-position: center bottom;
-  background-size:302px 448px;
-}
-.main section.page4{
-  background: url(images/iphone2.png) no-repeat;
-  background-position: center bottom;
-  /*background-attachment: fixed;*/
-  background-size:302px 448px;
-}
-.main section.page5{
-  background: url(images/iphone3.png) no-repeat;
-  background-position: center bottom;
-  /*background-attachment: fixed;*/
-  background-size:302px 448px;
-}
-.main section.page6{
-  background: url(images/sec4.png) no-repeat;
-  background-position: center center;
-  /*background-attachment: fixed;*/
-  background-size: cover;
 }
 body.disabled-onepage-scroll .onepage-wrapper  section {
   min-height: 100%;
