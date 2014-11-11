@@ -101,7 +101,6 @@ p {
   left: 0;
 }
 .logo{
-  opacity: 0;
   margin-top: 120px;
 }
 canvas{
@@ -155,10 +154,6 @@ canvas{
     }
 }
 
-.elmt{
-
-  display: none;
-}
 .page2 .sec-title{
 	margin-left: -150px;
 }
