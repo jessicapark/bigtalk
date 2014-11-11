@@ -365,7 +365,9 @@ header {
     animation-delay:1s;
   -webkit-animation-delay:1s;
 }
-
+.page3 .elmt1-4 {
+top: 0px;
+}
 
 .absolute{
   position: absolute;
