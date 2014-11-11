@@ -82,7 +82,7 @@ p {
 .bg-dot, #section-linemove-1{
   width: 100%;
   height: 100%;
-  position: absolute;
+  position: relative;
   background: url('../img/bg-dot.png') repeat;
   top: 0;
   left: 0;
