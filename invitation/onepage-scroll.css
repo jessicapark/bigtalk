@@ -228,7 +228,11 @@ header {
   left: 50%;
   margin-left: -145px;
 }
-
+.line{
+  position: absolute;
+  width: 500px;
+  height: 500px;
+}
 .elmt1-2 img{
   position: absolute;
   right: 0;
@@ -245,6 +249,7 @@ header {
     -o-animation: line1 3.5s infinite;
     animation: line1 3.5s infinite;
 }
+
 @-webkit-keyframes line1{
     0% { opacity: 0; filter: alpha(opacity=0); -khtml-opacity: 0; -moz-opacity: 0;
       -webkit-transform:translate(500px,-500px);-moz-transform:translate(500px,-500px);transform:translate(500px,-500px);
@@ -256,6 +261,7 @@ header {
       -webkit-transform:translate(-500px,500px);-moz-transform:translate(-500px,500px);transform:translate(-500px,500px);
     }
 }
+
 .elmt1-5 img{
   position: absolute;
   left: -200px;
@@ -263,6 +269,21 @@ header {
 }
 .elmt1-5{
     overflow: hidden;
+    left: 0;
+    right: auto;
+    -webkit-animation: line2 3.5s infinite;
+    -moz-animation: line2 3.5s infinite;
+    -o-animation: line2 3.5s infinite;
+    animation: line2 3.5s infinite;
+}
+.elmt1-6 img{
+  position: absolute;
+  left: 300px;
+  top: 100px;
+}
+.elmt1-6{
+    overflow: hidden;
+    top: 30px;
     left: 0;
     right: auto;
     -webkit-animation: line2 3.5s infinite;
@@ -281,6 +302,8 @@ header {
       -webkit-transform:translate(500px,500px);-moz-transform:translate(-500px,-500px);transform:translate(-500px,-500px);
     }
 }
+
+
 
 .page-title{
   margin-top: 20px;
