@@ -22,11 +22,11 @@
 }
 
 /* Nav */
-.tabs nav {
+nav {
 	text-align: center;
 }
 
-.tabs nav ul {
+nav ul {
 	position: relative;
 	display: -ms-flexbox;
 	display: -webkit-flex;
@@ -49,7 +49,7 @@
 	justify-content: center;
 }
 
-.tabs nav ul li {
+nav ul li {
 	position: relative;
 	z-index: 1;
 	display: block;
@@ -61,7 +61,7 @@
 	flex: 1;
 }
 
-.tabs nav a {
+nav a {
 	position: relative;
 	display: block;
 	overflow: hidden;
@@ -70,16 +70,16 @@
 	line-height: 2.5;
 }
 
-.tabs nav a span {
+nav a span {
 	vertical-align: middle;
 	font-size: 0.75em;
 }
 
-.tabs nav li.tab-current a {
+nav li.tab-current a {
 	color: #74777b;
 }
 
-.tabs nav a:focus {
+nav a:focus {
 	outline: none;
 }
 

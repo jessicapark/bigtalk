@@ -35,7 +35,7 @@ a:hover, a:focus {
 	color: #74777b;
 }
 
-.container{
+#container{
 	width: 100%;
 	display: table;
 	margin: 0;
@@ -64,7 +64,7 @@ a:hover, a:focus {
 	opacity: 0;
 }
 
-.container > section {
+#container > section {
 	font-size: 1.25em;
 	min-height: 100vh;
 }
