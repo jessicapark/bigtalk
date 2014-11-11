@@ -341,7 +341,32 @@ header {
 }
 
 
+.elmt1-4 {
+  width: 281px;
+  height: 560px;
+  position: absolute;
+  right: 0px;
+  top: 350px;
+  left: auto;
+}
 
+.elmt1-4 img{
+  right: 0;
+    position: absolute;
+    -webkit-animation: blink1 2s infinite;
+    -moz-animation: blink1 2s infinite;
+    -o-animation: blink1 2s infinite;
+    animation: blink1 2s infinite;
+    animation-delay:1s;
+  -webkit-animation-delay:1s;
+}
+
+
+.absolute{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
 .page-title{
   margin-top: 20px;
   z-index: 999;
