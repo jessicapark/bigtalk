@@ -12,7 +12,7 @@
 }
 
 .tabs {
-	overflow: visible;
+	overflow: inherit;
 	overflow-x: hidden;
 	height: 100vh;
 	margin: 0 auto;
@@ -22,11 +22,11 @@
 }
 
 /* Nav */
-nav {
+.tabs nav {
 	text-align: center;
 }
 
-nav ul {
+.tabs nav ul {
 	position: relative;
 	display: -ms-flexbox;
 	display: -webkit-flex;
@@ -49,7 +49,7 @@ nav ul {
 	justify-content: center;
 }
 
-nav ul li {
+.tabs nav ul li {
 	position: relative;
 	z-index: 1;
 	display: block;
@@ -61,7 +61,7 @@ nav ul li {
 	flex: 1;
 }
 
-nav a {
+.tabs nav a {
 	position: relative;
 	display: block;
 	overflow: hidden;
@@ -70,16 +70,16 @@ nav a {
 	line-height: 2.5;
 }
 
-nav a span {
+.tabs nav a span {
 	vertical-align: middle;
 	font-size: 0.75em;
 }
 
-nav li.tab-current a {
+.tabs nav li.tab-current a {
 	color: #74777b;
 }
 
-nav a:focus {
+.tabs nav a:focus {
 	outline: none;
 }
 
