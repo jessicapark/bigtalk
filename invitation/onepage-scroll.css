@@ -282,6 +282,9 @@ header {
     }
 }
 
+.page-title{
+  margin-top: 20px;
+}
 .main section.page3{
   background: url(images/iphone1.png) no-repeat;
   /*background-attachment:fixed;*/
