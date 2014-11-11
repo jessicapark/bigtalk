@@ -285,6 +285,7 @@ header {
     -moz-animation: line1 3.5s infinite;
     -o-animation: line1 3.5s infinite;
     animation: line1 3.5s infinite;
+    z-index: 99999;
 }
 
 @-webkit-keyframes line1{
