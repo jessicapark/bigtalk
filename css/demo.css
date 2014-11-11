@@ -56,11 +56,6 @@ a:hover, a:focus {
 	opacity: 0;
 }
 
-section {
-	font-size: 1.25em;
-	min-height: 100vh;
-}
-
 p {
 	text-align: center;
 	padding: 1em;
