@@ -68,14 +68,50 @@ p {
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-top: -25px;
   margin-left: -145px;
 }
 .taimiao img{
-    -webkit-animation: slide 15s infinite;
-    -moz-animation: slide 15s infinite;
-    -o-animation: slide 15s infinite;
-    animation: slide 15s infinite;
+    -webkit-animation: slide 10s infinite;
+    -moz-animation: slide 10s infinite;
+    -o-animation: slide 10s infinite;
+    animation: slide 10s infinite;
+}
+.slogan{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: 75px;
+  margin-left: -100px;
+}
+.slogan img{
+    -webkit-animation: slide2 10s infinite;
+    -moz-animation: slide2 10s infinite;
+    -o-animation: slide2 10s infinite;
+    animation: slide2 10s infinite;
+}
+
+@-webkit-keyframes slide {
+    0%, 10% { opacity: 1; filter: alpha(opacity=100); -khtml-opacity: 1; -moz-opacity: 1;
+      transform:scale(1,1);  -moz-transform:scale(1,1); -webkit-transform:scale(1,1);
+    }
+    45%, 50%, 55% { opacity: 0.5; filter: alpha(opacity=50); -khtml-opacity: 0.5; -moz-opacity: 0.5;
+      transform:scale(1.3,1.3);  -moz-transform:scale(1.3,1.3); -webkit-transform:scale(1.3,1.3);
+    }
+    90%, 100% { opacity: 1; filter: alpha(opacity=100); -khtml-opacity: 1; -moz-opacity: 1;
+      transform:scale(1,1);  -moz-transform:scale(1,1); -webkit-transform:scale(1,1);
+    }
+}
+
+@-webkit-keyframes slide2 {
+    0%, 10% { opacity: 0.5; filter: alpha(opacity=50); -khtml-opacity: 0.5; -moz-opacity: 0.5;
+      transform:scale(1,1);  -moz-transform:scale(1,1); -webkit-transform:scale(1,1);
+    }
+    45%, 50%, 55% {  opacity: 1; filter: alpha(opacity=100); -khtml-opacity: 1; -moz-opacity: 1;
+      transform:scale(1.5,1.5);  -moz-transform:scale(1.5,1.5); -webkit-transform:scale(1.5,1.5);
+    }
+    90%, 100% { opacity: 0.5; filter: alpha(opacity=50); -khtml-opacity: 0.5; -moz-opacity: 0.5;
+      transform:scale(1,1);  -moz-transform:scale(1,1); -webkit-transform:scale(1,1);
+    }
 }
 .sct1 {
 	position: relative;	
@@ -89,7 +125,7 @@ p {
 }
 
 .content-wrap .sct1 section.page1{
-  height: 90vh;
+  height: 100vh;
   width: 100%;
 }
 .logo{
@@ -99,30 +135,11 @@ p {
   margin-left: -65px;
   margin-top: -160px;
 }
-canvas{
-}
-.page1 .pic-slide{
-	width: 100%;
-	height: 85vh;
-  overflow: hidden;
+.sclogo{
   position: absolute;
-}
-.page1 .pic-slide img{
-	width: auto;
-	left: -50%;
-	position: absolute;
-	height: 100%;
-}
-@-webkit-keyframes slide {
-    0%, 10% { opacity: 1; filter: alpha(opacity=100); -khtml-opacity: 1; -moz-opacity: 1;
-      transform:scale(1,1);  -moz-transform:scale(1,1); -webkit-transform:scale(1,1);
-    }
-    45%, 50%, 55% { opacity: 0.5; filter: alpha(opacity=50); -khtml-opacity: 0.5; -moz-opacity: 0.5;
-      transform:scale(1.5,1.5);  -moz-transform:scale(1.5,1.5); -webkit-transform:scale(1.5,1.5);
-    }
-    90%, 100% { opacity: 1; filter: alpha(opacity=100); -khtml-opacity: 1; -moz-opacity: 1;
-      transform:scale(1,1);  -moz-transform:scale(1,1); -webkit-transform:scale(1,1);
-    }
+  left: 50%;
+  bottom: 80px;
+  margin-left: -89px;
 }
 
 .page2 .sec-title{
@@ -198,8 +215,8 @@ canvas{
 
 .elmt1-1 img{
   position: absolute;
-  left: -70px;
-  top: 300px;
+  left: -140px;
+  top: 0px;
     -webkit-animation: blink1 2s infinite;
     -moz-animation: blink1 2s infinite;
     -o-animation: blink1 2s infinite;
@@ -209,7 +226,7 @@ canvas{
 .elmt1-3 img{
   position: absolute;
   left: 50px;
-  top: 330px;
+  top: 30px;
     -webkit-animation: blink1 2s infinite;
     -moz-animation: blink1 2s infinite;
     -o-animation: blink1 2s infinite;
