@@ -142,7 +142,7 @@
 
 /* Content */
 .content-wrap {
-	/*overflow: scroll;*/
+	overflow: hidden;
 	height: auto;	
 	display: block;
 	position: relative;
@@ -154,7 +154,6 @@
 	margin: 0 auto;
 	max-width: 1200px;
 	text-align: center;
-	overflow: hidden;
 }
 
 .content-wrap section.content-current {
