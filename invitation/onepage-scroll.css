@@ -228,6 +228,60 @@ header {
   left: 50%;
   margin-left: -145px;
 }
+
+.elmt1-2 img{
+  position: absolute;
+  right: 0;
+  top: 200px;
+}
+
+
+.elmt1-2{
+    overflow: hidden;
+    right: 0;
+    left: auto;
+    -webkit-animation: line1 3.5s infinite;
+    -moz-animation: line1 3.5s infinite;
+    -o-animation: line1 3.5s infinite;
+    animation: line1 3.5s infinite;
+}
+@-webkit-keyframes line1{
+    0% { opacity: 0; filter: alpha(opacity=0); -khtml-opacity: 0; -moz-opacity: 0;
+      -webkit-transform:translate(500px,-500px);-moz-transform:translate(500px,-500px);transform:translate(500px,-500px);
+    }
+    50%,60%,65% { opacity: 1; filter: alpha(opacity=100); -khtml-opacity: 1; -moz-opacity: 1;
+      -webkit-transform:translate(0px,0px);-moz-transform:translate(0px,0px);transform:translate(0px,0px);
+    }
+    100% { opacity: 0; filter: alpha(opacity=0); -khtml-opacity: 0; -moz-opacity: 0;
+      -webkit-transform:translate(-500px,500px);-moz-transform:translate(-500px,500px);transform:translate(-500px,500px);
+    }
+}
+.elmt1-5 img{
+  position: absolute;
+  left: -200px;
+  top: -350px;
+}
+.elmt1-5{
+    overflow: hidden;
+    left: 0;
+    right: auto;
+    -webkit-animation: line2 3.5s infinite;
+    -moz-animation: line2 3.5s infinite;
+    -o-animation: line2 3.5s infinite;
+    animation: line2 3.5s infinite;
+}
+@-webkit-keyframes line2{
+    0% { opacity: 0; filter: alpha(opacity=0); -khtml-opacity: 0; -moz-opacity: 0;
+      -webkit-transform:translate(-500px,-500px);-moz-transform:translate(-500px,-500px);transform:translate(-500px,-500px);
+    }
+    50%,60%,65% { opacity: 1; filter: alpha(opacity=100); -khtml-opacity: 1; -moz-opacity: 1;
+      -webkit-transform:translate(0px,0px);-moz-transform:translate(-500px,-500px);transform:translate(-500px,-500px);
+    }
+    100% { opacity: 0; filter: alpha(opacity=0); -khtml-opacity: 0; -moz-opacity: 0;
+      -webkit-transform:translate(500px,500px);-moz-transform:translate(-500px,-500px);transform:translate(-500px,-500px);
+    }
+}
+
 .main section.page3{
   background: url(images/iphone1.png) no-repeat;
   /*background-attachment:fixed;*/
