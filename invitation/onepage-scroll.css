@@ -246,7 +246,7 @@ header {
 .elmt1-1 img{
   position: absolute;
   left: -170px;
-  bottom: 20px;
+  bottom: -20px;
     -webkit-animation: blink1 2s infinite;
     -moz-animation: blink1 2s infinite;
     -o-animation: blink1 2s infinite;
