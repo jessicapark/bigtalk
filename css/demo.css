@@ -64,6 +64,19 @@ p {
 
 /***********************/
 
+.taimiao{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -45px;
+  margin-left: -145px;
+}
+.taimiao img{
+    -webkit-animation: slide 15s infinite;
+    -moz-animation: slide 15s infinite;
+    -o-animation: slide 15s infinite;
+    animation: slide 15s infinite;
+}
 .sct1 {
 	position: relative;	
 }
@@ -79,16 +92,12 @@ p {
   height: 90vh;
   width: 100%;
 }
-.bg-dot, #section-linemove-1{
-  width: 100%;
-  height: 100%;
-  position: relative;
-  background: url('../img/bg-dot.png') repeat;
-  top: 0;
-  left: 0;
-}
 .logo{
-  margin-top: 120px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -65px;
+  margin-top: -150px;
 }
 canvas{
 }
@@ -104,40 +113,15 @@ canvas{
 	position: absolute;
 	height: 100%;
 }
-.page1 .pic-slide img:nth-child(1){
-    -webkit-animation: slide2 15s infinite;
-    -moz-animation: slide2 15s infinite;
-    -o-animation: slide2 15s infinite;
-    animation: slide2 15s infinite;
-}
-.page1 .pic-slide img:nth-child(2){
-    -webkit-animation: slide 15s infinite;
-    -moz-animation: slide 15s infinite;
-    -o-animation: slide 15s infinite;
-    animation: slide 15s infinite;
-}
-
 @-webkit-keyframes slide {
     0%, 10% { opacity: 1; filter: alpha(opacity=100); -khtml-opacity: 1; -moz-opacity: 1;
       transform:scale(1,1);  -moz-transform:scale(1,1); -webkit-transform:scale(1,1);
     }
-    45%, 50%, 55% { opacity: 0; filter: alpha(opacity=0); -khtml-opacity: 0; -moz-opacity: 0;
+    45%, 50%, 55% { opacity: 0.5; filter: alpha(opacity=50); -khtml-opacity: 0.5; -moz-opacity: 0.5;
       transform:scale(1.5,1.5);  -moz-transform:scale(1.5,1.5); -webkit-transform:scale(1.5,1.5);
     }
     90%, 100% { opacity: 1; filter: alpha(opacity=100); -khtml-opacity: 1; -moz-opacity: 1;
       transform:scale(1,1);  -moz-transform:scale(1,1); -webkit-transform:scale(1,1);
-    }
-}
-
-@-webkit-keyframes slide2 {
-    0%, 10% {  opacity: 0; filter: alpha(opacity=0); -khtml-opacity: 0; -moz-opacity: 0;
-      transform:scale(1.5,1.5);  -moz-transform:scale(1.5,1.5); -webkit-transform:scale(1.5,1.5);
-    }
-    45%, 50%, 55% { opacity: 1; filter: alpha(opacity=100); -khtml-opacity: 1; -moz-opacity: 1;
-      transform:scale(1,1); -moz-transform:scale(1,1); -webkit-transform:scale(1,1);
-    }
-    90%, 100% {  opacity: 0; filter: alpha(opacity=0); -khtml-opacity: 0; -moz-opacity: 0;
-      transform:scale(1.5,1.5);  -moz-transform:scale(1.5,1.5);-webkit-transform:scale(1.5,1.5);
     }
 }
 
@@ -449,7 +433,7 @@ margin-bottom: 50px;
 }
 .page3 .sec-title-2 .elmt {
 position: relative;
-margin-left: -63px;
+margin-left: -15px;
 }
 
 .page4 .sec-title {
