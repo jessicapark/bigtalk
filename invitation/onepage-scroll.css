@@ -287,6 +287,8 @@ header {
     -moz-animation: line1 3.5s infinite;
     -o-animation: line1 3.5s infinite;
     animation: line1 3.5s infinite;
+}
+.page1 .elmt1-2{
     z-index: 99999;
 }
 
