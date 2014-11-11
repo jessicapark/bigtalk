@@ -383,11 +383,11 @@ header {
   margin-top: 0;
   margin-left: 0;
 }
-.page4 .absolute , .page5 .absolute , .page6 .absolute{
+.page4 .absolute{
   margin-left: -145px;
   margin-top: -200px;
 }
-.page5 .absolute{
+.page5 .absolute, .page6 .absolute{
   margin-left: -145px;
   margin-top: -230px;
 }
