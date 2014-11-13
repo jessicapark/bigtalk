@@ -194,13 +194,13 @@ header {
 }
 
 .main section.page1 .absolute{
-  width: 90%;
-  height: 90%;
-  margin: 5%;
+  width: 88%;
+  height: 88%;
+  margin: 6%;
 }
 
 .main section.page1 .absolute .frame{
-  border: 10px #ff0314 solid;
+  border: 7px #ff0314 solid;
   height: 100%;
 }
 
