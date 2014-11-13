@@ -240,6 +240,31 @@ header {
   margin-left: -88px;
   margin-top: 120px;
 }
+.main section.page2 .absolute{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 300px;
+  margin-top: -250px;
+  margin-left: -150px;
+}
+.main section.page2 .page-content{
+  margin-top: 30px;
+}
+.main section.page2 .page-content img{
+  margin-top: 5px;
+}
+.main section.page2 .page-content2{
+  margin-top: 25px;
+}
+.main section.page2 .page-content2 img{
+  position: absolute;
+  left: 0;
+}
+
+
+
+
 .line{
   position: absolute;
   width: 500px;
