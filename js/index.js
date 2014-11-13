@@ -24,6 +24,6 @@
  $('.tabs nav ul li').live('click',function(){ 
   $('.whitebox').hide();
   $('.freeout').hide();
-  $('#canvas').hide();
+  window.scroll(0,0);
 
  })

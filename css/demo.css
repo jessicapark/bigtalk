@@ -43,6 +43,15 @@ a:hover, a:focus {
 	margin: 1em auto 0;
 	padding: 0;
 }
+.fade{
+  width: 100vh;
+  height: 100vh;
+  position: fixed;
+  display: none;
+  top: 0;
+  background: #fff url('../img/bg-dot.png') repeat;
+  z-index: 999999;
+}
 
 .no-flexbox .support {
 	display: block;
