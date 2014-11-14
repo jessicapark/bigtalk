@@ -240,14 +240,6 @@ header {
   margin-left: -88px;
   margin-top: 120px;
 }
-.main section.page2 .absolute{
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 300px;
-  margin-top: -230px;
-  margin-left: -150px;
-}
 .main section.page2 .page-content{
   margin-top: 30px;
 }
@@ -405,11 +397,12 @@ top: 0px;
 }
 
 .absolute{
+  width: 300px;
   position: absolute;
   left: 50%;
   top: 50%;
   margin-top: -230px;
-  margin-left: -160px;
+  margin-left: -150px;
 
 }
 
@@ -422,17 +415,29 @@ top: 0px;
   margin-top: 0;
   margin-left: 0;
 }
-.page4 .absolute{
-  margin-left: -145px;
-  margin-top: -200px;
+.page5 .absolute{
+  margin-left: -160px;
 }
-.page5 .absolute, .page6 .absolute, .page7 .absolute, .page8 .absolute{
-  margin-left: -145px;
-  margin-top: -230px;
+.page5-line{
+  width: 86px;
+  height: 256px;
+  margin-left: 20px;
+  margin-top: -5px;
+  overflow: hidden;
+}
+.page5-text{
+  margin-top: -240px;
 }
 .page-title{
   margin-top: 20px;
   z-index: 999;
+}
+.timetable{
+  margin-top: 29px;
+  margin-left: -8px;
+}
+.timetable img{
+  margin-top: 5px;
 }
 body.disabled-onepage-scroll .onepage-wrapper  section {
   min-height: 100%;
