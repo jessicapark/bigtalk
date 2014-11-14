@@ -66,17 +66,31 @@ function donghuabefore(index){//每次翻页动画开始前，先为动画做准
     $thispage.find('.fm2,.fm3,.fm4').css('opacity',0);
   }
   if(index==2){
-    $thispage.find('.pic1,.pic3').css('margin-left','-600px');
-    $thispage.find('.pic2,.pic4').css('margin-left','600px');
-    $thispage.find('.pic5,.pic6').css('opacity',0);
+
+    $thispage.find('.pic1,.pic3').css('margin-left','-1000px');
+    $thispage.find('.pic2,.pic4').css('margin-left','1000px');
+    $thispage.find('.pic5,.pic6,.page-title').css('opacity',0);
   }
+  if(index==3){
+    $thispage.find('.item img, .page-title').css('opacity',0);
+    $thispage.find('.item img:nth-child(1)').css('margin-left','20px');
+    $thispage.find('.item img:nth-child(4)').css('margin-left','-20px');
+    $thispage.find('.item img:nth-child(5)').css('margin-left','20px');
+    $thispage.find('.item img:nth-child(2)').css('margin-left','-20px');
+    $thispage.find('.item img:nth-child(3)').css('margin-left','20px');
+    $thispage.find('.item img:nth-child(6)').css('margin-left','-20px');
+  }
+  if (index==5) {
+    $thispage.find('.page5-text img, .page-title, .timetable img').css('opacity',0);
+    $thispage.find('.page5-line').css('height','0px');
+  };
 }
 
 function donghua(index){  //每次翻页动画完成后会自动调用这个函数并且将页数传给index这个变量
   $('.zsy').fadeOut(500);  //将所有页已经显示的动画隐去
   $thispage=$('.page'+index);
 
-if(index==1){
+  if(index==1){
 
     $thispage.find('.fm2').animate({
     opacity:'1.0',
@@ -100,27 +114,47 @@ if(index==1){
     
   }//page1
 
-if(index==2){
+  if(index==2){
   
+    $thispage.find('.page-title').animate({
+    opacity:'1.0',
+  }, 500,function(){
+    $thispage.find('.pic1').animate({
+    marginLeft:'10px',
+  }, 500,function(){
     $thispage.find('.pic1').animate({
     marginLeft:'0px',
-  }, 1000,function(){
+  }, 200,function(){
+    $thispage.find('.pic2').animate({
+    marginLeft:'-10px',
+  }, 500,function(){
     $thispage.find('.pic2').animate({
     marginLeft:'0px',
-  }, 1000,function(){
+  },200,function(){
+    $thispage.find('.pic3').animate({
+    marginLeft:'10px',
+  },500,function(){
     $thispage.find('.pic3').animate({
     marginLeft:'0px',
-  },1000,function(){
+  },200,function(){
+    $thispage.find('.pic4').animate({
+    marginLeft:'-10px',
+  },500,function(){
     $thispage.find('.pic4').animate({
     marginLeft:'0px',
-  },1000,function(){
+  },200,function(){
     $thispage.find('.pic5').animate({
     opacity:'1.0',
-  },1000,function(){
+  },500,function(){
     $thispage.find('.pic6').animate({
     opacity:'1.0',
-  },2000,function(){
-    
+  },500,function(){
+  
+  });  
+  });
+  });
+  });
+  });  
   });
   });
   });
@@ -129,4 +163,148 @@ if(index==2){
   });
     
   }//page2
+
+  if(index==3){
+  
+    $thispage.find('.page-title').animate({
+    opacity:'1.0',
+  }, 500,function(){
+    $thispage.find('.item img:nth-child(1)').animate({
+    marginLeft:'0px',
+    opacity:'1.0',
+  }, 300,function(){
+    $thispage.find('.item img:nth-child(4)').animate({
+    marginLeft:'0px',
+    opacity:'1.0',
+  }, 300,function(){
+    $thispage.find('.item img:nth-child(5)').animate({
+    marginLeft:'0px',
+    opacity:'1.0',
+  }, 300,function(){
+    $thispage.find('.item img:nth-child(2)').animate({
+    marginLeft:'0px',
+    opacity:'1.0',
+  },300,function(){
+    $thispage.find('.item img:nth-child(3)').animate({
+    marginLeft:'0px',
+    opacity:'1.0',
+  },300,function(){
+    $thispage.find('.item img:nth-child(6)').animate({
+    marginLeft:'0px',
+    opacity:'1.0',
+  },300,function(){
+
+  });  
+  });
+  });
+  });
+  });
+  });
+  });
+    
+  }//page2
+
+if (index == 5) {
+
+    $thispage.find('.page-title').animate({
+        top: '0px',
+        opacity: '1.0',
+    },
+    1000,
+    function() {
+        $thispage.find('.page5-line').animate({
+            height: '256px',
+        },
+        1000,
+        function() {
+            $thispage.find('.timetable img:nth-child(1)').animate({
+                opacity: '1.0',
+                marginTop: '5px',
+            },
+            500,
+            function() {
+                $thispage.find('.timetable img:nth-child(2)').animate({
+                    opacity: '1.0',
+                    marginTop: '5px',
+                },
+                500,
+                function() {
+                    $thispage.find('.timetable img:nth-child(3)').animate({
+                        opacity: '1.0',
+                        marginTop: '5px',
+                    },
+                    500,
+                    function() {
+                        $thispage.find('.timetable img:nth-child(4)').animate({
+                            opacity: '1.0',
+                            marginTop: '5px',
+                        },
+                        500,
+                        function() {
+                            $thispage.find('.timetable img:nth-child(5)').animate({
+                                opacity: '1.0',
+                                marginTop: '5px',
+                            },
+                            500,
+                            function() {
+                                $thispage.find('.page5-text img:nth-child(1)').animate({
+                                    opacity: '1.0',
+                                    marginRight: '0px',
+                                },
+                                500,
+                                function() {
+                                    $thispage.find('.page5-text img:nth-child(2)').animate({
+                                        opacity: '1.0',
+                                        marginRight: '0px',
+                                    },
+                                    500,
+                                    function() {
+                                        $thispage.find('.page5-text img:nth-child(3)').animate({
+                                            opacity: '1.0',
+                                            marginRight: '0px',
+                                        },
+                                        500,
+                                        function() {
+                                            $thispage.find('.page5-text img:nth-child(4)').animate({
+                                                opacity: '1.0',
+                                                marginRight: '0px',
+                                            },
+                                            500,
+                                            function() {
+                                                $thispage.find('.page5-text img:nth-child(5)').animate({
+                                                    opacity: '1.0',
+                                                    marginRight: '0px',
+                                                },
+                                                500,
+                                                function() {
+                                                    $thispage.find('.page5-text img:nth-child(6)').animate({
+                                                        opacity: '1.0',
+                                                        marginRight: '0px',
+                                                    },
+                                                    500,
+                                                    function() {
+                                                        $thispage.find('.page5-text img:nth-child(7)').animate({
+                                                            opacity: '1.0',
+                                                            marginRight: '0px',
+                                                        },
+                                                        500,
+                                                        function() {
+
+                                                        });
+                                                    });
+                                                });
+                                            });
+                                        });
+                                    });
+                                });
+                            });
+                        });
+                    });
+                });
+            });
+        });
+    });
+
+} //page5
+
 }
