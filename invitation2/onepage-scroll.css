@@ -261,12 +261,15 @@ header {
 }
 .main section.page2 .page-content2{
   margin-top: 25px;
+  width: 300px;
 }
-.main section.page2 .page-content2 img{
-  position: absolute;
-  left: 0;
+.main section.page2 .page-content2 div{
+  width: 300px;
+  margin: 0 auto;
 }
-
+.main section.page2 .page-content2 div.pic6{
+  margin-top: -121px;
+}
 
 
 

@@ -72,7 +72,8 @@ function donghuabefore(index){//每次翻页动画开始前，先为动画做准
     $thispage.find('.pic1,.pic3').css('margin-left','-1000px');
     $thispage.find('.pic2,.pic4').css('margin-left','1000px');
     $thispage.find('.pic5,.pic6,.page-title').css('opacity',0);
-    $thispage.find('.pic5,.pic6').css('margin-top','50px');
+    $thispage.find('.pic5,.pic6').css('width','0px');
+
   }
   if(index==3){
     $thispage.find('.alumnus img, .page-title').css('opacity',0);
@@ -227,11 +228,10 @@ function donghua(index){  //每次翻页动画完成后会自动调用这个函�
 
   if(index==2){
   
-    $thispage.find('.page-title').animate({
-    opacity:'1.0',
-    marginTop:'20px'
-  }, 400,function(){
-    $thispage.find('.pic1').animate({
+    
+  movedonghua_page5($thispage.find('.page-title'),0,500,"top");
+
+    $thispage.find('.pic1').delay(500).animate({
     marginLeft:'10px',
   }, 400,function(){
     $thispage.find('.pic1').animate({
@@ -257,12 +257,13 @@ function donghua(index){  //每次翻页动画完成后会自动调用这个函�
   },200,function(){
     $thispage.find('.pic5').animate({
     opacity:'1.0',
-  },500,function(){
-    $thispage.find('.pic6').animate({
+    width:'300px'
+  },200,function(){
+    $thispage.find('.pic6').delay(200).animate({
     opacity:'1.0',
-  },500,function(){
+    width:'300px'
+  },200,function(){
   
-  }); 
   });  
   });  
   });
@@ -281,9 +282,9 @@ function donghua(index){  //每次翻页动画完成后会自动调用这个函�
     movedonghua_page5($thispage.find('.alumnus img:nth-child(1)'),300,500,"top");
     movedonghua_page5($thispage.find('.alumnus img:nth-child(2)'),500,500,"top");
     movedonghua_page5($thispage.find('.alumnus img:nth-child(3)'),700,500,"top");
-    movedonghua_page5($thispage.find('.alumnus img:nth-child(4)'),900,500,"top");
-    movedonghua_page5($thispage.find('.alumnus img:nth-child(5)'),1100,500,"top");
-    movedonghua_page5($thispage.find('.alumnus img:nth-child(6)'),1300,500,"top");
+    movedonghua_page5($thispage.find('.alumnus img:nth-child(4)'),1200,500,"top");
+    movedonghua_page5($thispage.find('.alumnus img:nth-child(5)'),1400,500,"top");
+    movedonghua_page5($thispage.find('.alumnus img:nth-child(6)'),1600,500,"top");
   }
 
   if(index==4){
@@ -291,9 +292,9 @@ function donghua(index){  //每次翻页动画完成后会自动调用这个函�
     movedonghua($thispage.find('.item img:nth-child(1)'),300);
     movedonghua($thispage.find('.item img:nth-child(4)'),500);
     movedonghua($thispage.find('.item img:nth-child(5)'),700);
-    movedonghua($thispage.find('.item img:nth-child(2)'),900);
-    movedonghua($thispage.find('.item img:nth-child(3)'),1100);
-    movedonghua($thispage.find('.item img:nth-child(6)'),1300);
+    movedonghua($thispage.find('.item img:nth-child(2)'),1100);
+    movedonghua($thispage.find('.item img:nth-child(3)'),1300);
+    movedonghua($thispage.find('.item img:nth-child(6)'),1500);
 /*讲一下这个函数的作用：
   
   movedonghua($选择器,延迟时间,持续时间)
