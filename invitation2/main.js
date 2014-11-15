@@ -96,15 +96,15 @@ function donghuabefore(index){//每次翻页动画开始前，先为动画做准
   }
   if (index==6) {
     $thispage.find('.page-title').css('opacity',0);
-    $thispage.find('.page-title').css('margin-top','50px');
+    $thispage.find('.page-title').css('margin-top','100px');
   }
   if (index==7) {
     $thispage.find('.page-title').css('opacity',0);
-    $thispage.find('.page-title').css('margin-top','50px');
+    $thispage.find('.page-title').css('margin-top','100px');
   }
   if (index==8) {
     $thispage.find('.page-title').css('opacity',0);
-    $thispage.find('.page-title').css('margin-top','50px');
+    $thispage.find('.page-title').css('margin-top','100px');
   }
   if (index==9) {
     $thispage.find('.table img, .page-title, .table-text img').css('opacity',0);
@@ -119,6 +119,10 @@ function donghuabefore(index){//每次翻页动画开始前，先为动画做准
     $thispage.find('.table-text img:nth-child(7)').css('margin-left','200px');
   }
   
+  if (index==10) {
+    $thispage.find('.absolute').css('opacity','0');
+    $thispage.find('.absolute').css('margin-top','0px');
+  }
   if (index==11) {
     $thispage.find('.footer-logo, .footer-text1, .footer-text2, .sponsor-logo').css('opacity',0);
     $thispage.find('.footer-logo').css('height','0px');
@@ -309,7 +313,7 @@ function donghua(index){  //每次翻页动画完成后会自动调用这个函�
    $thispage.find('.page-title').animate({
           opacity: '1.0',
       },
-      1000,
+      300,
       function() {
           $thispage.find('.page5-line').animate({
               height: '276px',
@@ -349,6 +353,11 @@ function donghua(index){  //每次翻页动画完成后会自动调用这个函�
   }
   if (index == 8) {
     movedonghua_page5($thispage.find('.page-title'),0,500,"top");
+  }
+
+
+  if (index == 10) {
+      $thispage.find('.absolute').animate({marginTop: '-120px',opacity: '1'},1000)
   }
 
   if (index == 9) {

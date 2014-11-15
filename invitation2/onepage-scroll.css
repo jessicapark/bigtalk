@@ -131,6 +131,62 @@ a {
   position: absolute;
   /*background:#fff;*/
 }
+#particles-js2{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.elmt-blink{
+  position: relative;
+  margin-left: 64px;
+  margin-top: -15px;
+}
+.page3 .elmt-blink , .page4 .elmt-blink {
+margin-left: 26px;
+}
+.elmt-blink img{
+  margin: 0 5px;
+
+}
+.elmt-blink img:nth-child(1){
+    -webkit-animation: elmt1 1s infinite;
+    -moz-animation: elmt1 1s infinite;
+    -o-animation: elmt1 1s infinite;
+    animation: elmt1 1s infinite;
+}
+.elmt-blink img:nth-child(2){
+    -webkit-animation: elmt1 1s infinite;
+    -moz-animation: elmt1 1s infinite;
+    -o-animation: elmt1 1s infinite;
+    animation: elmt1 1s infinite;
+    animation-delay:0.2s;
+  -webkit-animation-delay:0.2s;
+}
+.elmt-blink img:nth-child(3){
+    -webkit-animation: elmt1 1s infinite;
+    -moz-animation: elmt1 1s infinite;
+    -o-animation: elmt1 1s infinite;
+    animation: elmt1 1s infinite;
+    animation-delay:0.4s;
+  -webkit-animation-delay:0.4s;
+}
+.elmt-blink img:nth-child(4){
+    -webkit-animation: elmt1 1s infinite;
+    -moz-animation: elmt1 1s infinite;
+    -o-animation: elmt1 1s infinite;
+    animation: elmt1 1s infinite;
+    animation-delay:0.6s;
+  -webkit-animation-delay:0.6s;
+}
+@-webkit-keyframes elmt1 {
+    0% { opacity: 1; filter: alpha(opacity=100); -khtml-opacity: 1; -moz-opacity: 1;
+    }
+    50%, 60%, 65% { opacity: 0; filter: alpha(opacity=0); -khtml-opacity: 0; -moz-opacity: 0;
+    }
+    100% { opacity: 1; filter: alpha(opacity=100); -khtml-opacity: 1; -moz-opacity: 1;
+    }
+}
 
 .main {
   float: left;
