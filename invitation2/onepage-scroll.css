@@ -415,8 +415,13 @@ top: 0px;
   margin-top: 0;
   margin-left: 0;
 }
-.page3 .absolute {
+.page4 .absolute {
   width: 320px;
+  margin-left: -160px;
+}
+.page3 .alumnus{
+width: 321px;
+margin-left: -10px;
 }
 .item{
   position: relative;
@@ -475,6 +480,28 @@ top: 0px;
 }
 .timetable img{
   margin-top: -5px;
+}
+.page11 .footer-logo{
+  width: 149px;
+  height: 56px;
+  margin: 0 auto;
+}
+.page11 .footer-text1{
+  width: 206px;
+  height: 43px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+.page11 .footer-text2{
+  width: 216px;
+  height: 33px;
+  margin: 0 auto;
+}
+.page11 .sponsor-logo{
+  width: 198px;
+  height: 64px;
+  margin: 0 auto;
+  margin-top: 80px;
 }
 body.disabled-onepage-scroll .onepage-wrapper  section {
   min-height: 100%;

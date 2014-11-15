@@ -71,7 +71,7 @@ function donghuabefore(index){//每次翻页动画开始前，先为动画做准
     $thispage.find('.pic2,.pic4').css('margin-left','1000px');
     $thispage.find('.pic5,.pic6,.page-title').css('opacity',0);
   }
-  if(index==3){
+  if(index==4){
     $thispage.find('.item img, .page-title').css('opacity',0);
     $thispage.find('.item img:nth-child(1)').css('margin-left','20px');
     $thispage.find('.item img:nth-child(4)').css('margin-left','-20px');
@@ -83,6 +83,17 @@ function donghuabefore(index){//每次翻页动画开始前，先为动画做准
   if (index==5) {
     $thispage.find('.page5-text img, .page-title, .timetable img').css('opacity',0);
     $thispage.find('.page5-line').css('height','0px');
+  }
+  if (index==11) {
+    $thispage.find('.footer-logo, .footer-text1, .footer-text2, .sponsor-logo').css('opacity',0);
+    $thispage.find('.footer-logo').css('height','37px');
+    $thispage.find('.footer-logo').css('width','99px');
+    $thispage.find('.footer-text1').css('height','28px');
+    $thispage.find('.footer-text1').css('width','137px');
+    $thispage.find('.footer-text2').css('height','22px');
+    $thispage.find('.footer-text2').css('width','144px');
+    $thispage.find('.sponsor-logo').css('height','43px');
+    $thispage.find('.sponsor-logo').css('width','132px');
   };
 }
 
@@ -108,6 +119,36 @@ function donghua(index){  //每次翻页动画完成后会自动调用这个函�
     //width:'+=5%'
   }, 1000,function(){
 
+  });
+  });
+  });
+    
+  }//page1
+
+  if(index==11){
+
+    $thispage.find('.footer-logo').animate({
+    opacity:'1.0',
+    height:'56px',
+    width:'149px'
+  }, 300,function(){
+    $thispage.find('.footer-text1').animate({
+    opacity:'1.0',
+    height:'43px',
+    width:'206px'
+  }, 300,function(){
+    $thispage.find('.footer-text2').animate({
+    opacity:'1.0',
+    height:'33px',
+    width:'216px'
+  }, 300,function(){
+    $thispage.find('.sponsor-logo').animate({
+    opacity:'1.0',
+    height:'64px',
+    width:'198px'
+  }, 300,function(){
+
+  });
   });
   });
   });
@@ -164,7 +205,7 @@ function donghua(index){  //每次翻页动画完成后会自动调用这个函�
     
   }//page2
 
-  if(index==3){
+  if(index==4){
   
     $thispage.find('.page-title').animate({
     opacity:'1.0',
