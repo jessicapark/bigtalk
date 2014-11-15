@@ -93,6 +93,19 @@ function donghuabefore(index){//每次翻页动画开始前，先为动画做准
     $thispage.find('.page5-text img').css('margin-right','-50px');
     $thispage.find('.timetable img').css('margin-top','50px');
   }
+  if (index==9) {
+    $thispage.find('.table img, .page-title, .table-text img').css('opacity',0);
+    $thispage.find('.table img:nth-child(2), .table img:nth-child(4), .table img:nth-child(6), .table img:nth-child(8)').css('margin-right','-200px');
+    $thispage.find('.table img:nth-child(1), .table img:nth-child(3), .table img:nth-child(5), .table img:nth-child(7)').css('margin-top','-200px');
+    $thispage.find('.table-text img:nth-child(1)').css('margin-left','-200px');
+    $thispage.find('.table-text img:nth-child(2)').css('margin-left','200px');
+    $thispage.find('.table-text img:nth-child(3)').css('margin-left','-200px');
+    $thispage.find('.table-text img:nth-child(4)').css('margin-left','200px');
+    $thispage.find('.table-text img:nth-child(5)').css('margin-left','-200px');
+    $thispage.find('.table-text img:nth-child(6)').css('margin-left','200px');
+    $thispage.find('.table-text img:nth-child(7)').css('margin-left','200px');
+  }
+  
   if (index==11) {
     $thispage.find('.footer-logo, .footer-text1, .footer-text2, .sponsor-logo').css('opacity',0);
     $thispage.find('.footer-logo').css('height','0px');
@@ -271,41 +284,133 @@ function donghua(index){  //每次翻页动画完成后会自动调用这个函�
 */
   }//page4
 
-if (index == 5) {
+  if (index == 5) {
 
- $thispage.find('.page-title').animate({
-        opacity: '1.0',
-    },
-    1000,
-    function() {
-        $thispage.find('.page5-line').animate({
-            height: '276px',
-        },
-        1000)
-      });
-movedonghua_page5($thispage.find('.timetable img:nth-child(1)'),1900,500,"top");
-movedonghua_page5($thispage.find('.timetable img:nth-child(2)'),2100,500,"top");
-movedonghua_page5($thispage.find('.timetable img:nth-child(3)'),2300,500,"top");
-movedonghua_page5($thispage.find('.timetable img:nth-child(4)'),2500,500,"top");
-movedonghua_page5($thispage.find('.timetable img:nth-child(5)'),2700,500,"top");
+   $thispage.find('.page-title').animate({
+          opacity: '1.0',
+      },
+      1000,
+      function() {
+          $thispage.find('.page5-line').animate({
+              height: '276px',
+          },
+          1000)
+        });
+  movedonghua_page5($thispage.find('.timetable img:nth-child(1)'),1900,500,"top");
+  movedonghua_page5($thispage.find('.timetable img:nth-child(2)'),2100,500,"top");
+  movedonghua_page5($thispage.find('.timetable img:nth-child(3)'),2300,500,"top");
+  movedonghua_page5($thispage.find('.timetable img:nth-child(4)'),2500,500,"top");
+  movedonghua_page5($thispage.find('.timetable img:nth-child(5)'),2700,500,"top");
 
-movedonghua_page5($thispage.find('.page5-text img:nth-child(1)'),3000,500,"right");
-movedonghua_page5($thispage.find('.page5-text img:nth-child(2)'),3300,500,"right");
-movedonghua_page5($thispage.find('.page5-text img:nth-child(3)'),3600,500,"right");
-movedonghua_page5($thispage.find('.page5-text img:nth-child(4)'),3900,500,"right");
-movedonghua_page5($thispage.find('.page5-text img:nth-child(5)'),4200,500,"right");
-movedonghua_page5($thispage.find('.page5-text img:nth-child(6)'),4500,500,"right");
-movedonghua_page5($thispage.find('.page5-text img:nth-child(7)'),4800,500,"right");
+  movedonghua_page5($thispage.find('.page5-text img:nth-child(1)'),3000,500,"right");
+  movedonghua_page5($thispage.find('.page5-text img:nth-child(2)'),3300,500,"right");
+  movedonghua_page5($thispage.find('.page5-text img:nth-child(3)'),3600,500,"right");
+  movedonghua_page5($thispage.find('.page5-text img:nth-child(4)'),3900,500,"right");
+  movedonghua_page5($thispage.find('.page5-text img:nth-child(5)'),4200,500,"right");
+  movedonghua_page5($thispage.find('.page5-text img:nth-child(6)'),4500,500,"right");
+  movedonghua_page5($thispage.find('.page5-text img:nth-child(7)'),4800,500,"right");
 
-/*讲一下这个函数的作用：
+  /*讲一下这个函数的作用：
+    
+    movedonghua_page5($选择器,延迟时间,持续时间,marginTop/marginRight模式)
+    其中延迟时间都是相对于翻到这一页开始的0时刻，单位是毫秒，默认为0
+    持续时间与animal中的speed参数意义一样，表示这个动画从开始到结束播放多少毫秒，默认为500
+    marginTop/marginRight模式的关键字分别为"top"和"right"
+    
+  */
+
+  } //page5
+
   
-  movedonghua_page5($选择器,延迟时间,持续时间,marginTop/marginRight模式)
-  其中延迟时间都是相对于翻到这一页开始的0时刻，单位是毫秒，默认为0
-  持续时间与animal中的speed参数意义一样，表示这个动画从开始到结束播放多少毫秒，默认为500
-  marginTop/marginRight模式的关键字分别为"top"和"right"
+  if (index == 9) {
+
+    movedonghua_page5($thispage.find('.page-title'),0,300,"top");
+
+    movedonghua_page5($thispage.find('.table img:nth-child(2)'),300,300,"right");
+    movedonghua_page5($thispage.find('.table img:nth-child(4)'),500,300,"right");
+    movedonghua_page5($thispage.find('.table img:nth-child(6)'),700,300,"right");
+    movedonghua_page5($thispage.find('.table img:nth-child(8)'),900,300,"right");
+
+    movedonghua_page5($thispage.find('.table img:nth-child(1)'),700,200,"top");
+    movedonghua_page5($thispage.find('.table img:nth-child(3)'),900,200,"top");
+    movedonghua_page5($thispage.find('.table img:nth-child(5)'),1100,200,"top");
+    movedonghua_page5($thispage.find('.table img:nth-child(7)'),1300,200,"top");
+
+
+    $thispage.find('.table-text img:nth-child(1)').delay(1500).animate({
+    marginLeft:'10px',
+    opacity:'1.0',
+  }, 400,function(){
+    $thispage.find('.table-text img:nth-child(1)').animate({
+    marginLeft:'0px',
+    opacity:'1.0',
+  }, 200,function(){
+    $thispage.find('.table-text img:nth-child(2)').animate({
+    marginLeft:'-10px',
+    opacity:'1.0',
+  }, 400,function(){
+    $thispage.find('.table-text img:nth-child(2)').animate({
+    marginLeft:'0px',
+    opacity:'1.0',
+  },200,function(){
+    $thispage.find('.table-text img:nth-child(3)').animate({
+    marginLeft:'10px',
+    opacity:'1.0',
+  },400,function(){
+    $thispage.find('.table-text img:nth-child(3)').animate({
+    marginLeft:'0px',
+    opacity:'1.0',
+  },200,function(){
+    $thispage.find('.table-text img:nth-child(4)').animate({
+    marginLeft:'-10px',
+    opacity:'1.0',
+  },400,function(){
+    $thispage.find('.table-text img:nth-child(4)').animate({
+    marginLeft:'0px',
+    opacity:'1.0',
+  },200,function(){
+    $thispage.find('.table-text img:nth-child(5)').animate({
+    opacity:'1.0',
+    marginLeft:'10px',
+  },400,function(){
+    $thispage.find('.table-text img:nth-child(5)').animate({
+    opacity:'1.0',
+    marginLeft:'0px',
+  },200,function(){
+    $thispage.find('.table-text img:nth-child(6)').animate({
+    opacity:'1.0',
+    marginLeft:'-10px',
+  },400,function(){
+    $thispage.find('.table-text img:nth-child(6)').animate({
+    opacity:'1.0',
+    marginLeft:'0px',
+  },200,function(){
+    $thispage.find('.table-text img:nth-child(7)').animate({
+    opacity:'1.0',
+    marginLeft:'-10px',
+  },400,function(){
+    $thispage.find('.table-text img:nth-child(7)').animate({
+    opacity:'1.0',
+    marginLeft:'0px',
+  },200,function(){
   
-*/
+  });
+  });
+  });
+  }); 
+  });  
+  });  
+  });
+  });
+  });
+  });  
+  });
+  });
+  });
+  });
+    
 
-} //page5
 
+
+  }
 }

@@ -493,11 +493,23 @@ margin-top: 40px;
   margin-top: -5px;
 }
 .page9 .table{
-  margin-top: 10px;
+  width: 300px;
+position: absolute;
+top: 100px;
+left: 50%;
+margin-left: -150px;
 }
 .page9 .table img{
-  margin-top: 5px;
-  margin-bottom: -5px;
+}
+.page9 .table-text {
+position: absolute;
+width: 300px;
+top: 250px;
+left: 50%;
+margin-left: -150px;
+}
+.page9 .table-text img:nth-child(1), .page9 .table-text img:nth-child(5) {
+  margin-bottom: 10px;
 }
 .page10 .absolute .wx{
   margin: 10px auto;
