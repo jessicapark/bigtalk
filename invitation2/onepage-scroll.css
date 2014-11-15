@@ -125,6 +125,12 @@ a {
   text-decoration: none;
 }
 
+#particles-js{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background:#fff;
+}
 
 .main {
   float: left;

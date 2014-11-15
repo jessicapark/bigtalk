@@ -93,6 +93,18 @@ function donghuabefore(index){//每次翻页动画开始前，先为动画做准
     $thispage.find('.page5-text img').css('margin-right','-50px');
     $thispage.find('.timetable img').css('margin-top','50px');
   }
+  if (index==6) {
+    $thispage.find('.page-title').css('opacity',0);
+    $thispage.find('.page-title').css('margin-top','50px');
+  }
+  if (index==7) {
+    $thispage.find('.page-title').css('opacity',0);
+    $thispage.find('.page-title').css('margin-top','50px');
+  }
+  if (index==8) {
+    $thispage.find('.page-title').css('opacity',0);
+    $thispage.find('.page-title').css('margin-top','50px');
+  }
   if (index==9) {
     $thispage.find('.table img, .page-title, .table-text img').css('opacity',0);
     $thispage.find('.table img:nth-child(2), .table img:nth-child(4), .table img:nth-child(6), .table img:nth-child(8)').css('margin-right','-200px');
@@ -130,11 +142,18 @@ function movedonghua_page5($who,delaytime,speed,marginwho){
   if (delaytime==null){delaytime=0;}
   if (speed==null){speed=500;}
   if (marginwho==null){marginwho="top";}
+  speed2 = speed-200;
 if (marginwho=="top"){
   $who.delay(delaytime).animate({
-    marginTop:'5px',
+    marginTop:'0px',
     opacity:'1.0',
-  },speed);
+  },speed2,function(){
+    $who.animate({
+    marginTop:'5px',
+  },200,function(){
+  
+  });
+  });
 }
 if  (marginwho=="right"){
   $who.delay(delaytime).animate({
@@ -258,17 +277,17 @@ function donghua(index){  //每次翻页动画完成后会自动调用这个函�
   }//page2
 
   if(index==3){
-    movedonghua_page5($thispage.find('.page-title'),0,300,"top");
-    movedonghua_page5($thispage.find('.alumnus img:nth-child(1)'),300,300,"top");
-    movedonghua_page5($thispage.find('.alumnus img:nth-child(2)'),500,300,"top");
-    movedonghua_page5($thispage.find('.alumnus img:nth-child(3)'),700,300,"top");
-    movedonghua_page5($thispage.find('.alumnus img:nth-child(4)'),900,300,"top");
-    movedonghua_page5($thispage.find('.alumnus img:nth-child(5)'),1100,300,"top");
-    movedonghua_page5($thispage.find('.alumnus img:nth-child(6)'),1300,300,"top");
+    movedonghua_page5($thispage.find('.page-title'),0,500,"top");
+    movedonghua_page5($thispage.find('.alumnus img:nth-child(1)'),300,500,"top");
+    movedonghua_page5($thispage.find('.alumnus img:nth-child(2)'),500,500,"top");
+    movedonghua_page5($thispage.find('.alumnus img:nth-child(3)'),700,500,"top");
+    movedonghua_page5($thispage.find('.alumnus img:nth-child(4)'),900,500,"top");
+    movedonghua_page5($thispage.find('.alumnus img:nth-child(5)'),1100,500,"top");
+    movedonghua_page5($thispage.find('.alumnus img:nth-child(6)'),1300,500,"top");
   }
 
   if(index==4){
-    movedonghua_page5($thispage.find('.page-title'),0,300,"top");
+    movedonghua_page5($thispage.find('.page-title'),0,500,"top");
     movedonghua($thispage.find('.item img:nth-child(1)'),300);
     movedonghua($thispage.find('.item img:nth-child(4)'),500);
     movedonghua($thispage.find('.item img:nth-child(5)'),700);
@@ -321,20 +340,29 @@ function donghua(index){  //每次翻页动画完成后会自动调用这个函�
 
   } //page5
 
-  
+  if (index == 6) {
+    movedonghua_page5($thispage.find('.page-title'),0,500,"top");
+  }
+  if (index == 7) {
+    movedonghua_page5($thispage.find('.page-title'),0,500,"top");
+  }
+  if (index == 8) {
+    movedonghua_page5($thispage.find('.page-title'),0,500,"top");
+  }
+
   if (index == 9) {
 
-    movedonghua_page5($thispage.find('.page-title'),0,300,"top");
+    movedonghua_page5($thispage.find('.page-title'),0,500,"top");
 
     movedonghua_page5($thispage.find('.table img:nth-child(2)'),300,300,"right");
     movedonghua_page5($thispage.find('.table img:nth-child(4)'),500,300,"right");
     movedonghua_page5($thispage.find('.table img:nth-child(6)'),700,300,"right");
     movedonghua_page5($thispage.find('.table img:nth-child(8)'),900,300,"right");
 
-    movedonghua_page5($thispage.find('.table img:nth-child(1)'),700,200,"top");
-    movedonghua_page5($thispage.find('.table img:nth-child(3)'),900,200,"top");
-    movedonghua_page5($thispage.find('.table img:nth-child(5)'),1100,200,"top");
-    movedonghua_page5($thispage.find('.table img:nth-child(7)'),1300,200,"top");
+    movedonghua_page5($thispage.find('.table img:nth-child(1)'),700,500,"top");
+    movedonghua_page5($thispage.find('.table img:nth-child(3)'),900,500,"top");
+    movedonghua_page5($thispage.find('.table img:nth-child(5)'),1100,500,"top");
+    movedonghua_page5($thispage.find('.table img:nth-child(7)'),1300,500,"top");
 
 
     $thispage.find('.table-text img:nth-child(1)').delay(1500).animate({
