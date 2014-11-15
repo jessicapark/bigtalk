@@ -216,20 +216,14 @@ header {
 .main section.page1 .fm2{
   width: 190px;
   height: auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-left: -95px;
-  margin-top: 30px;
+  position: relative;
+  margin: 75% auto 0 auto;
 }
 .main section.page1 .fm3{
   width: 120px;
   height: auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-left: -60px;
-  margin-top: 20px;
+  position: relative;
+  margin: -8% auto 0 auto;
 }
 .main section.page1 .fm4{
   width: 177px;
@@ -422,6 +416,10 @@ top: 0px;
 .page3 .alumnus{
 width: 321px;
 margin-left: -10px;
+margin-top: 40px;
+}
+.page3 .alumnus img{
+  float: left;
 }
 .item{
   position: relative;
@@ -464,7 +462,7 @@ margin-left: -10px;
   overflow: hidden;
 }
 .page5-text{
-  margin-top: -240px;
+  margin-top: -270px;
 }
 .page5-text img{
   margin-top: 5px;
@@ -480,6 +478,23 @@ margin-left: -10px;
 }
 .timetable img{
   margin-top: -5px;
+}
+.page9 .table{
+  margin-top: 10px;
+}
+.page9 .table img{
+  margin-top: 5px;
+  margin-bottom: -5px;
+}
+.page10 .absolute .wx{
+  margin: 10px auto;
+  width: 85px;
+  height: 26px;
+}
+.page10 .absolute .email{
+  margin: 10px auto;
+  width: 105px;
+  height: 12px;
 }
 .page11 .footer-logo{
   width: 149px;
