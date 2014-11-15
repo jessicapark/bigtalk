@@ -357,7 +357,7 @@ function donghua(index){  //每次翻页动画完成后会自动调用这个函�
 
 
   if (index == 10) {
-      $thispage.find('.absolute').animate({marginTop: '-120px',opacity: '1'},1000)
+      $thispage.find('.absolute').animate({marginTop: '-120px',opacity: '1'},500)
   }
 
   if (index == 9) {
