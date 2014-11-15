@@ -213,6 +213,10 @@ header {
   margin-left: -65px;
   margin-top: -150px;
 }
+.fm2, .fm3, .fm4{
+
+  opacity: 0;
+}
 .main section.page1 .fm2{
   width: 190px;
   height: auto;
