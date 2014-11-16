@@ -1,8 +1,8 @@
 var imgUrl = "http://jessicapark.github.io/bigtalk/invitation/images/weixin.png"; //注意必须是绝对路径
 var ttt = true;
 var lineLink = "http://jessicapark.github.io/bigtalk/invitation/"; //同样，必须是绝对路径
-var descContent = 'The BIG Talk · 奇点大学北京公开课介绍 邀请函'; //分享给朋友或朋友圈时的文字简介
-var shareTitle = 'The BIG Talk · 奇点大学北京公开课介绍 邀请函'; //分享title
+var descContent = 'The BIG Talk·奇点大学北京太庙公开课报名正式开启！'; //分享给朋友或朋友圈时的文字简介
+var shareTitle = '11月24日，奇点大学首次来华开讲。3位全球顶级专家，8小时密集课程，沉浸式尖端培训，200席虚位以待。'; //分享title
 var appid = ''; //apiID，可留空
 
 function shareFriend() {
