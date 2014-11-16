@@ -149,20 +149,21 @@
 	position: relative;
 }
 
-.content-wrap section {
+.content-wrap > section {
 	width: 100%;
+	height: 100vh;
 	display: none;
 	margin: 0 auto;
 	max-width: 1200px;
 	text-align: center;
 }
 
-.content-wrap section.content-current {
+.content-wrap > section.content-current {
 	display: block;
 	padding-bottom: 52px;
 }
 
-.content-wrap section p {
+.content-wrap > section p {
 	margin: 0 30px;
 	padding: 0.75em 0;
 	color: #414141;
@@ -171,7 +172,7 @@
 }
 
 /* Fallback */
-.no-js .content-wrap section {
+.no-js .content-wrap > section {
 	display: block;
 	padding-bottom: 2em;
 	border-bottom: 1px solid rgba(255,255,255,0.6);
