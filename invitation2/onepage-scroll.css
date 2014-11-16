@@ -131,10 +131,14 @@ a {
   position: absolute;
   /*background:#fff;*/
 }
-#particles-js2{
-  height: 100%;
-  width: 100%;
-  position: absolute;
+@media screen and (min-width: 800px) {
+  #particles-js{
+    height: 60%;
+    width: 60%;
+    left: 20%;
+    top: 20%;
+    position: absolute;
+  }
 }
 
 .elmt-blink{

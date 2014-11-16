@@ -503,8 +503,6 @@ top: 0px;
 }
 
 .absolute{
-  transform: scale(0.8,0.8);
-  -webkit-transform: scale(0.8,0.8);
   width: 300px;
   position: absolute;
   left: 50%;
