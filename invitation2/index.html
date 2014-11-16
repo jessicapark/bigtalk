@@ -12,18 +12,31 @@
   <script type="text/javascript" src="onepagescroll.js"></script>
   <script type="text/javascript" src="main.js"></script>
   <link href='onepage-scroll.css' rel='stylesheet' type='text/css'>
-
+<style type="text/css">
+  .loading{
+    font-size: 12px;
+    margin-top:80%;
+    font-weight:bold;
+  }
+  section{
+    display: none;
+  }
+ 
+</style>
 </head>
 <body>
     
     <div class="wrapper"> 
     <div class="main">
+     
+
 
       <!-- 要么颠覆要么被颠覆 -->
       <section class="page1">
         <div id="particles-js"></div>
         <div class="absolute">
           <div class="frame">
+            <div class="loading">LOADING...</div>
             <div class="fm"><img src="images/fm.png" width="131"></div>
             <div class="slogan">
                 <div class="fm2" ><img src="images/fm2.png" width="100%"></div>
@@ -142,7 +155,10 @@
         <div class="elmt elmt1-1"><img src="images/elmt1-1.png" width="347" height="347"></div>
         <div class="elmt elmt1-3"><img src="images/elmt1-3.png" width="231" height="230"></div>
         <div class="absolute">
-          <img src="images/page11-1.png" width="300"><div class="wx"><img src="images/page11-2.png" width="100%"></div><img src="images/page11-3.png" width="300"><div class="email"><img src="images/page11-4.png" width="100%"></div><img src="images/page11-5.png" width="300">
+          <img src="images/page11-1.png" width="300"><div class="wx">
+          <a href="http://mp.weixin.qq.com/s?__biz=MjM5NjAxOTU4MA==&mid=375171857&idx=1&sn=5b7407a0ff2050ff998213fe55a9fa16&scene=1&key=6e349d5d56885f8e0840b41d0ac0129ce87db76304b566740aebb94d00b5f7ef4ff196b74dd511ef6b6909aa57247095&ascene=1&uin=NDQxNTYyMzIw&devicetype=webwx&version=70000001&pass_ticket=k%2F98kS2dsyJpiCle0bPDGH7VQpTpnzCVR6Sg7Ys%2Bk7Om13I%2FZvxh5RBS9R6uN7O6">
+          <img src="images/page11-2.png" width="300"></a>
+        </div><img src="images/page11-3.png" width="300"><div class="email">
         </div>
       </section>
       <!-- The BIG Talk logo -->
@@ -162,8 +178,7 @@
     </div>
 
   </div>
-
-        <script src="particles.js"></script>
+<script src="particles.js"></script>
         <script type="text/javascript">
         particlesJS('particles-js', {
             particles: {
@@ -200,16 +215,7 @@
             retina_detect: true
         });
         </script>
-  <script>
-   onePageScroll(".main", {
-     sectionContainer: "section",
-     loop: true,
-     responsiveFallback: false,
-    beforeMove: function(index) {donghuabefore(index)},  
-     afterMove: function(index) {donghua(index)},
+   
 
-   });
-    
-  </script>
 </body>
 </html>
