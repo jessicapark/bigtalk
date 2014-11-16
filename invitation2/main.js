@@ -86,41 +86,8 @@ $(document).ready(function() {
 
   $('section').hide();
   $('.page1').show();
-          particlesJS('particles-js', {
-            particles: {
-                color: '#ff0314',
-                shape: 'circle',
-                opacity: 1,
-                size: 2.5,
-                size_random: true,
-                nb: 20,
-                line_linked: {
-                    enable_auto: true,
-                    distance: 250,
-                    color: '#ff0314',
-                    opacity: 0.5,
-                    width: 1,
-                    condensed_mode: {
-                        enable: false,
-                        rotateX: 600,
-                        rotateY: 600
-                    }
-                },
-                anim: {
-                    enable: true,
-                    speed: 2
-                }
-            },
-            interactivity: {
-                enable: true,
-                mouse: {
-                    distance: 200
-                },
-                mode: 'grab'
-            },
-            retina_detect: true
-        });
   var lll = setInterval("loader()", 2000);
+
 });
 window.onload = function() {
   _sendStatData('http://nsclick.baidu.com/v.gif?pid=107&wise=1&from=【topic】&fr=&soe=2&m_ni=0&act=big_show&act_data_1=invitation');
@@ -129,6 +96,42 @@ window.onload = function() {
   $('section').show();
   donghuabefore(1);
   donghua(1); //加载完成后自动播放第一页的动画
+
+  particlesJS('particles-js', {
+      particles: {
+          color: '#ff0314',
+          shape: 'circle',
+          opacity: 1,
+          size: 2.5,
+          size_random: true,
+          nb: 20,
+          line_linked: {
+              enable_auto: true,
+              distance: 250,
+              color: '#ff0314',
+              opacity: 0.5,
+              width: 1,
+              condensed_mode: {
+                  enable: false,
+                  rotateX: 600,
+                  rotateY: 600
+              }
+          },
+          anim: {
+              enable: true,
+              speed: 2
+          }
+      },
+      interactivity: {
+          enable: true,
+          mouse: {
+              distance: 200
+          },
+          mode: 'grab'
+      },
+      retina_detect: true
+  });
+  
   onePageScroll(".main", {
     sectionContainer: "section",
     loop: true,
