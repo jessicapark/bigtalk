@@ -62,7 +62,28 @@ function loader() {
     $('.loading').fadeIn(1000).delay(1000).fadeOut(1000);
   }
 }
+
+function _sendStatData(url){
+  setTimeout(function(){
+
+      var $statLink = $('<link rel="'+ (/baidubrowser/i.test(navigator.userAgent) ? 'alternate ' : '') +'stylesheet" />');
+      $('head').append($statLink);
+
+      $statLink.attr(
+          'href'
+          , url
+      );
+
+      setTimeout(function(){
+          $statLink.remove();
+      }, 5000);
+
+  },0);
+}
+
 $(document).ready(function() {
+
+
   $('section').hide();
   $('.page1').show();
           particlesJS('particles-js', {
@@ -102,6 +123,7 @@ $(document).ready(function() {
   var lll = setInterval("loader()", 2000);
 });
 window.onload = function() {
+  _sendStatData('http://nsclick.baidu.com/v.gif?pid=107&wise=1&from=【topic】&fr=&soe=2&m_ni=0&act=big_show&act_data_1=invitation');
   ttt = false;
   $('.loading').hide();
   $('section').show();
