@@ -83,7 +83,18 @@ function _sendStatData(url){
 
 $(document).ready(function() {
 
+ $(".main").onepage_scroll({
+    sectionContainer: "section",
+    loop: true,
+    responsiveFallback: false,
+    beforeMove: function(index) {
+      donghuabefore(index);
+    },
+    afterMove: function(index) {
+      donghua(index);
+    },
 
+  });
   $('section').hide();
   $('.page1').show();
   var lll = setInterval("loader()", 2000);
@@ -132,18 +143,7 @@ window.onload = function() {
       retina_detect: true
   });
   
-  onePageScroll(".main", {
-    sectionContainer: "section",
-    loop: true,
-    responsiveFallback: false,
-    beforeMove: function(index) {
-      donghuabefore(index);
-    },
-    afterMove: function(index) {
-      donghua(index);
-    },
-
-  });
+ 
 }
 
 function donghuabefore(index) { //每次翻页动画开始前，先为动画做准备，比方说透明度变成1或者移出屏幕
